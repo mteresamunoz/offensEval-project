@@ -1,0 +1,9 @@
+File: data/dev.tsv
+Number of examples: 1000
+Class distribution: {'NOT': 648, 'OFF': 352}
+Proportion OFF: 0.3520 (352 examples)
+Proportion NOT: 0.6480 (648 examples)
+Sample OFF: @USER It really sucks when commies atheists liberals refugees and anyone who isn't one of (us) uses our" precious tax dollars...."
+Sample NOT: @USER @USER @USER Liberals can’t stand all the WINNIG!!  😂. URL
+Average tweet length: 127.65 characters
+--------------------------------------------------
