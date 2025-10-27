@@ -1,0 +1,2 @@
+model,preprocessing,dev_accuracy,dev_f1_macro,dev_f1_off,dev_f1_not,test_accuracy,test_f1_macro,test_f1_off,test_f1_not
+SVM (Linear),aggressive,0.735,0.6888849754923542,0.5691056910569106,0.8086642599277978,0.7825581395348837,0.7105257947400726,0.5661252900232019,0.8549262994569433

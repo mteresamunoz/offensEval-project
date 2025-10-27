@@ -1,0 +1,2 @@
+model,preprocessing,dev_accuracy,dev_f1_macro,dev_f1_off,dev_f1_not,test_accuracy,test_f1_macro,test_f1_off,test_f1_not
+SVM (Linear),clean,0.724,0.6791160344322447,0.5591054313099042,0.7991266375545851,0.7848837209302325,0.7090764136125176,0.5605700712589073,0.8575827559661278

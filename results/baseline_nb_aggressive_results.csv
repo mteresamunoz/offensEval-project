@@ -1,0 +1,2 @@
+model,preprocessing,dev_accuracy,dev_f1_macro,dev_f1_off,dev_f1_not,test_accuracy,test_f1_macro,test_f1_off,test_f1_not
+Naive Bayes,aggressive,0.706,0.5758089928493516,0.34080717488789236,0.8108108108108109,0.7709302325581395,0.5969788878977104,0.33220338983050846,0.8617543859649123

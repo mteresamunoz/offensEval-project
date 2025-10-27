@@ -1,0 +1,2 @@
+model,preprocessing,dev_accuracy,dev_f1_macro,dev_f1_off,dev_f1_not,test_accuracy,test_f1_macro,test_f1_off,test_f1_not
+Naive Bayes,clean,0.708,0.5813620071684588,0.3511111111111111,0.8116129032258065,0.7662790697674419,0.5820185269816398,0.3044982698961938,0.859538784067086
