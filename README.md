@@ -63,6 +63,22 @@ The dataset is derived from the **Offensive Language Identification Dataset (OLI
 Each TSV file contains two tab-separated columns:
     \<tweet_text>\t\<label>
 
+### Data Preprocessing
+
+To generate the preprocessed datasets for experiments:
+
+```
+# Generate all preprocessing variants
+python scripts/preprocess.py --input_dir data/preprocessed/raw/ --output_dir data/preprocessed/ --strategy all
+
+```
+
+This creates three preprocessing variants:
+- **raw/**: Original data without modifications
+- **clean/**: Removes URLs and @mentions
+- **aggressive/**: Removes URLs, mentions, hashtags, numbers, and special characters
+
+Each variant maintains the same TSV format with tweet and label columns.
 
 ## Evaluation Metrics
 
@@ -81,7 +97,20 @@ offensEval-project/
     ├── deep/ # Deep learning models (LSTM, RNN)
     ├── transformers/ # Transformer-based models (BERT, RoBERTa, DeBERTa)
     ├── scripts/ # Utility scripts (preprocessing, data exploration)
-    ├── data/ # Dataset files (not included in repo)
+    ├── data/ # Dataset files 
+        ├── preprocessed/
+        │   ├── raw/          # Original data (no changes)
+        │   │   ├── train.tsv
+        │   │   ├── dev.tsv
+        │   │   └── test.tsv
+        │   ├── clean/        # URLs and mentions removed
+        │   │   ├── train.tsv
+        │   │   ├── dev.tsv
+        │   │   └── test.tsv
+        │   └── aggressive/   # Heavy preprocessing
+        │       ├── train.tsv
+        │       ├── dev.tsv
+        │       └── test.tsv
     ├── results/ # Experiment results and metrics
     ├── docs/ # Documentation and report
     └── README.md # This file
@@ -123,11 +152,14 @@ pip install -r requirements.txt
 
 ### Data Exploration
 ```
-python scripts/explore_data.py --input data/train.tsv --output results/train_stats.txt
+python scripts/explore_data.py --input data/preprocessed/raw/train.tsv --output results/train_stats.txt
+```
 
-python scripts/explore_data.py --input data/dev.tsv --output results/dev_stats.txt
+### Preprocessing Data
 
-python scripts/explore_data.py --input data/test.tsv --output results/test_stats.txt
+```
+# Generate all preprocessing variants
+python scripts/preprocess.py --input_dir data/preprocessed/raw/ --output_dir data/preprocessed/ --strategy all
 ```
 
 ### Training Models
