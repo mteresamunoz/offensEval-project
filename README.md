@@ -67,7 +67,7 @@ Each TSV file contains two tab-separated columns:
 
 To generate the preprocessed datasets for experiments:
 
-```
+``` bash
 # Generate all preprocessing variants
 python scripts/preprocess.py --input_dir data/preprocessed/raw/ --output_dir data/preprocessed/ --strategy all
 
@@ -127,6 +127,26 @@ offensEval-project/
 - LSTM with static embeddings (GloVe, FastText)
 - Bidirectional LSTM variants
 
+### Pre-trained Embeddings
+
+This project uses pre-trained word embeddings. Download them before running experiments:
+ ``` bash
+# GloVe Twitter (200d)
+cd embeddings
+wget http://nlp.stanford.edu/data/glove.twitter.27B.zip
+unzip glove.twitter.27B.zip
+rm glove.twitter.27B.25d.txt
+rm glove.twitter.27B.50d.txt
+rm glove.twitter.27B.100d.txt
+rm glove.twitter.27B.zip
+
+# Keep only 200d
+
+# FastText (300d)
+pip install gensim
+python scripts/download_fasttext.py
+ ```
+
 ### 3. Transformer Models
 - BERT (bert-base-uncased)
 - RoBERTa (roberta-base)
@@ -151,13 +171,13 @@ pip install -r requirements.txt
 ## Usage
 
 ### Data Exploration
-```
+``` bash
 python scripts/explore_data.py --input data/preprocessed/raw/train.tsv --output results/train_stats.txt
 ```
 
 ### Preprocessing Data
 
-```
+``` bash
 # Generate all preprocessing variants
 python scripts/preprocess.py --input_dir data/preprocessed/raw/ --output_dir data/preprocessed/ --strategy all
 ```
@@ -165,17 +185,17 @@ python scripts/preprocess.py --input_dir data/preprocessed/raw/ --output_dir dat
 ### Training Models
 
 **Baseline models:**
-```
+``` bash
 python baseline/ngram_classifier.py --train data/train.tsv --dev data/dev.tsv --test data/test.tsv --model svm --output results/
 ```
 
 **LSTM models:**
-```
+``` bash 
 python deep/lstm_classifier.py --train data/train.tsv --dev data/dev.tsv --test data/test.tsv --embedding glove --output results/
 ```
 
 **Transformer models:**
-```
+``` bash
 python transformers/transformer_classifier.py --train data/train.tsv --dev data/dev.tsv --test data/test.tsv --model bert-base-uncased --output results/
 ```
 
