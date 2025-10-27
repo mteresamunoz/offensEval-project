@@ -1,7 +1,30 @@
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Data files
 data/
+
+# Jupyter Notebooks
 .ipynb_checkpoints/
+
+# Environment variables
 .env
+
+# Model files
 *.pth
 *.pt
+*.pkl
+*.h5
+
+# System files
+.DS_Store
+Thumbs.db
