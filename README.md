@@ -75,42 +75,47 @@ offensEval-project/
 
 ## Installation
 
-Clone the repository
+```bash
+
+# Clone the repository
 git clone https://github.com/mteresamunoz/offensEval-project.git 
 cd offensEval-project
 
-Create virtual environment
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate 
 
-Install dependencies
+# Install dependencies
 pip install -r requirements.txt
-
+```
 
 ## Usage
 
 ### Data Exploration
-
+```
 python scripts/explore_data.py --input data/train.tsv --output results/train_stats.txt
 
 python scripts/explore_data.py --input data/dev.tsv --output results/dev_stats.txt
 
 python scripts/explore_data.py --input data/test.tsv --output results/test_stats.txt
-
+```
 
 ### Training Models
 
 **Baseline models:**
+```
 python baseline/ngram_classifier.py --train data/train.tsv --dev data/dev.tsv --test data/test.tsv --model svm --output results/
-
+```
 
 **LSTM models:**
+```
 python deep/lstm_classifier.py --train data/train.tsv --dev data/dev.tsv --test data/test.tsv --embedding glove --output results/
-
+```
 
 **Transformer models:**
+```
 python transformers/transformer_classifier.py --train data/train.tsv --dev data/dev.tsv --test data/test.tsv --model bert-base-uncased --output results/
-
+```
 
 ## Results
 
