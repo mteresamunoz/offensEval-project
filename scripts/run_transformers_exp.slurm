@@ -1,12 +1,29 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#SBATCH --job-name=offenseval
+#SBATCH --cpus-per-task=8
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=64GB
+#SBATCH --time=24:00:00
+#SBATCH --gres=gpu:1
+#SBATCH --output=/gaueko1/users/mmartin/offensEval-project/logs/transformers.out
+#SBATCH --error=/gaueko1/users/mmartin/offensEval-project/logs/transformers.err
+#SBATCH --mail-type=REQUEUE
+#SBATCH --mail-user=mariateresa.munoz@ehu.eus
+
+# IMPORTANTE: Cd al directorio del proyecto
+cd /gaueko1/users/mmartin/offensEval-project
+
+# Activar entorno virtual
+source venv/bin/activate
 
 echo "======================================"
 echo "TRANSFORMER EXPERIMENTS - OFFENSIVE LANGUAGE DETECTION"
 echo "======================================"
 echo ""
-
-# Create results directory
-mkdir -p results
+echo "Working directory: $(pwd)"
+echo "Python: $(which python)"
+echo ""
 
 # Check GPU
 echo "Checking GPU..."
