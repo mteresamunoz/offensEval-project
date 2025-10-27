@@ -10,6 +10,36 @@ This project addresses the binary classification task of identifying whether twe
 - **OFF**: Offensive tweets (insults, threats, profanity)
 - **NOT**: Non-offensive tweets
 
+## Research Question
+
+**How does Twitter-specific preprocessing affect offensive language detection performance across different model architectures?**
+
+### Motivation
+
+Social media text contains platform-specific features (hashtags, mentions, URLs, emojis) that may carry semantic information relevant to offense detection. However, traditional NLP pipelines often remove these elements as "noise." This project investigates whether such preprocessing helps or hurts different model types.
+
+### Experimental Setup
+
+I compare three preprocessing strategies:
+
+1. **Raw**: No preprocessing - original tweet text as-is
+2. **Clean**: Remove URLs and user mentions (@USER)
+3. **Aggressive**: Remove URLs, mentions, hashtags, numbers, and special characters
+
+Each strategy is evaluated across three model families:
+- **Classical**: N-gram features with Naive Bayes and SVM
+- **Neural**: LSTM with pre-trained embeddings (GloVe, FastText)
+- **Transformers**: BERT, RoBERTa, and DeBERTa
+
+### Hypothesis
+
+- Classical models may benefit from cleaned text (less noise, clearer n-gram patterns)
+- Transformer models, pre-trained on noisy social media data, may perform better with raw text
+- Twitter-specific features (hashtags, mentions) could contain valuable signals for offensive content detection
+
+Results and analysis are presented in the final report.
+
+
 ## Dataset
 
 The dataset is derived from the **Offensive Language Identification Dataset (OLID)** introduced in SemEval-2019 Task 6 ([Zampieri et al., 2019](https://aclanthology.org/S19-2010/)).
