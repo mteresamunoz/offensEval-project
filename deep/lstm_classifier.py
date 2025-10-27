@@ -1,3 +1,8 @@
+"""
+BiLSTM Classifier for Offensive Language Detection
+Supports GloVe and FastText embeddings with multiple preprocessing strategies.
+"""
+
 import pandas as pd
 import numpy as np
 import argparse
@@ -14,6 +19,7 @@ from collections import Counter
 
 # Set random seeds for reproducibility
 def set_seed(seed=42):
+    """Set random seeds for reproducibility."""
     np.random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
@@ -91,26 +97,60 @@ class BiLSTMClassifier(nn.Module):
         return out
 
 
-def load_glove_embeddings(glove_path, embedding_dim=200):
+def load_embeddings(embedding_path, embedding_type='glove'):
     """
-    Load GloVe embeddings from file.
+    Load pre-trained embeddings (GloVe or FastText format).
+    
+    Args:
+        embedding_path: Path to embedding file
+        embedding_type: 'glove' or 'fasttext'
+    Returns:
+        Dictionary mapping words to vectors
     """
-    print(f"\nLoading GloVe embeddings from {glove_path}...")
+    print(f"\nLoading {embedding_type.upper()} embeddings from {embedding_path}...")
     embeddings = {}
-    with open(glove_path, 'r', encoding='utf-8') as f:
+    
+    with open(embedding_path, 'r', encoding='utf-8') as f:
+        # FastText has a header line with vocab_size and dimensions
+        first_line = f.readline().strip().split()
+        
+        # Check if first line is header (FastText) or data (GloVe)
+        if embedding_type == 'fasttext' and len(first_line) == 2:
+            # Skip header
+            pass
+        else:
+            # First line is data, process it
+            word = first_line[0]
+            vector = np.asarray(first_line[1:], dtype='float32')
+            embeddings[word] = vector
+        
+        # Process remaining lines
         for line in f:
             values = line.strip().split()
+            if len(values) < 10:  # Skip malformed lines
+                continue
             word = values[0]
-            vector = np.asarray(values[1:], dtype='float32')
-            embeddings[word] = vector
+            try:
+                vector = np.asarray(values[1:], dtype='float32')
+                embeddings[word] = vector
+            except ValueError:
+                continue
     
     print(f"Loaded {len(embeddings)} word vectors")
     return embeddings
 
 
-def build_vocab_and_embeddings(texts, glove_embeddings, embedding_dim=200):
+def build_vocab_and_embeddings(texts, embeddings, embedding_dim=200):
     """
     Build vocabulary and embedding matrix from training data.
+    
+    Args:
+        texts: List of tweet texts
+        embeddings: Pre-trained embedding dictionary
+        embedding_dim: Dimension of embeddings
+    Returns:
+        vocab: Word to index mapping
+        embedding_matrix: Numpy array of embeddings
     """
     # Count word frequencies
     word_counts = Counter()
@@ -134,11 +174,11 @@ def build_vocab_and_embeddings(texts, glove_embeddings, embedding_dim=200):
     
     found = 0
     for word, idx in vocab.items():
-        if word in glove_embeddings:
-            embedding_matrix[idx] = glove_embeddings[word]
+        if word in embeddings:
+            embedding_matrix[idx] = embeddings[word]
             found += 1
     
-    print(f"Found {found}/{len(vocab)} words in GloVe")
+    print(f"Found {found}/{len(vocab)} words in embeddings ({found/len(vocab)*100:.1f}%)")
     
     return vocab, embedding_matrix
 
@@ -193,8 +233,8 @@ def plot_confusion_matrix(y_true, y_pred, model_name, dataset_name, output_dir):
     plt.xlabel('Predicted Label')
     plt.tight_layout()
     
-    filename = f'confusion_matrix_lstm_{dataset_name}.png'
-    plt.savefig(os.path.join(output_dir, filename), dpi=300)
+    filename = f'confusion_matrix_{model_name.lower().replace("-", "_")}_{dataset_name}.png'
+    plt.savefig(os.path.join(output_dir, filename), dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Confusion matrix saved to {filename}")
 
@@ -206,8 +246,11 @@ def main():
     parser.add_argument("--train", type=str, required=True, help="Path to training TSV")
     parser.add_argument("--dev", type=str, required=True, help="Path to dev TSV")
     parser.add_argument("--test", type=str, required=True, help="Path to test TSV")
-    parser.add_argument("--glove", type=str, required=True, 
-                       help="Path to GloVe embeddings file")
+    parser.add_argument("--embeddings", type=str, required=True, 
+                       help="Path to embeddings file")
+    parser.add_argument("--embedding_type", type=str, default='glove',
+                       choices=['glove', 'fasttext'],
+                       help="Type of embeddings")
     parser.add_argument("--preprocessing", type=str, default='raw',
                        choices=['raw', 'clean', 'aggressive'],
                        help="Preprocessing strategy")
@@ -234,7 +277,17 @@ def main():
     
     set_seed(args.seed)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    print(f"Using device: {device}")
+    
+    print("\n" + "="*60)
+    print("BILSTM CLASSIFIER FOR OFFENSIVE LANGUAGE DETECTION")
+    print("="*60)
+    print(f"Device: {device}")
+    print(f"Embeddings: {args.embedding_type.upper()} ({args.embedding_dim}d)")
+    print(f"Preprocessing: {args.preprocessing}")
+    print(f"Hidden size: {args.hidden_size}")
+    print(f"Dropout: {args.dropout}")
+    print(f"Batch size: {args.batch_size}")
+    print(f"Max length: {args.max_len}")
     
     # Load data
     print("\n" + "="*60)
@@ -245,14 +298,17 @@ def main():
     dev_df = pd.read_csv(args.dev, sep='\t', header=None, names=['tweet', 'label'])
     test_df = pd.read_csv(args.test, sep='\t', header=None, names=['tweet', 'label'])
     
-    print(f"Train: {len(train_df)} | Dev: {len(dev_df)} | Test: {len(test_df)}")
+    print(f"Train: {len(train_df)} examples")
+    print(f"Dev: {len(dev_df)} examples")
+    print(f"Test: {len(test_df)} examples")
+    print(f"Class distribution (train): {dict(train_df['label'].value_counts())}")
     
     # Load embeddings
-    glove_embeddings = load_glove_embeddings(args.glove, args.embedding_dim)
+    embeddings = load_embeddings(args.embeddings, args.embedding_type)
     
     # Build vocab and embedding matrix
     vocab, embedding_matrix = build_vocab_and_embeddings(
-        train_df['tweet'].tolist(), glove_embeddings, args.embedding_dim
+        train_df['tweet'].tolist(), embeddings, args.embedding_dim
     )
     
     # Create datasets
@@ -272,7 +328,7 @@ def main():
     labels = train_df['label'].tolist()
     class_weights = compute_class_weight('balanced', classes=np.unique(labels), y=labels)
     class_weights = torch.FloatTensor(class_weights).to(device)
-    print(f"Class weights: NOT={class_weights[0]:.3f}, OFF={class_weights[1]:.3f}")
+    print(f"\nClass weights: NOT={class_weights[0]:.3f}, OFF={class_weights[1]:.3f}")
     
     # Initialize model
     print("\n" + "="*60)
@@ -283,7 +339,10 @@ def main():
     criterion = nn.CrossEntropyLoss(weight=class_weights)
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     
-    print(f"Model parameters: {sum(p.numel() for p in model.parameters()):,}")
+    total_params = sum(p.numel() for p in model.parameters())
+    trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"Total parameters: {total_params:,}")
+    print(f"Trainable parameters: {trainable_params:,}")
     
     # Training loop with early stopping
     print("\n" + "="*60)
@@ -302,23 +361,29 @@ def main():
         dev_f1 = f1_score(dev_labels, dev_preds, average='macro')
         dev_acc = accuracy_score(dev_labels, dev_preds)
         
-        print(f"Epoch {epoch+1}/{args.epochs} | Loss: {train_loss:.4f} | "
-              f"Dev F1: {dev_f1:.4f} | Dev Acc: {dev_acc:.4f}")
+        print(f"Epoch {epoch+1:2d}/{args.epochs} | "
+              f"Loss: {train_loss:.4f} | "
+              f"Dev F1: {dev_f1:.4f} | "
+              f"Dev Acc: {dev_acc:.4f}")
         
         # Early stopping
         if dev_f1 > best_dev_f1:
             best_dev_f1 = dev_f1
             patience_counter = 0
             # Save best model
-            torch.save(model.state_dict(), os.path.join(args.output, 'best_lstm_model.pt'))
+            model_path = os.path.join(args.output, f'best_lstm_{args.embedding_type}_{args.preprocessing}.pt')
+            torch.save(model.state_dict(), model_path)
+            print(f"  → New best model saved (F1: {dev_f1:.4f})")
         else:
             patience_counter += 1
             if patience_counter >= patience:
-                print(f"Early stopping at epoch {epoch+1}")
+                print(f"\nEarly stopping at epoch {epoch+1}")
                 break
     
     # Load best model for final evaluation
-    model.load_state_dict(torch.load(os.path.join(args.output, 'best_lstm_model.pt')))
+    model_path = os.path.join(args.output, f'best_lstm_{args.embedding_type}_{args.preprocessing}.pt')
+    model.load_state_dict(torch.load(model_path))
+    print(f"\nLoaded best model from {model_path}")
     
     # Final evaluation
     print("\n" + "="*60)
@@ -333,10 +398,10 @@ def main():
     dev_f1_not = f1_score(dev_labels, dev_preds, pos_label=0)
     
     print(f"\nDevelopment Set:")
-    print(f"Accuracy: {dev_acc:.4f}")
-    print(f"Macro F1: {dev_f1_macro:.4f}")
-    print(f"F1 (OFF): {dev_f1_off:.4f}")
-    print(f"F1 (NOT): {dev_f1_not:.4f}")
+    print(f"  Accuracy:  {dev_acc:.4f}")
+    print(f"  Macro F1:  {dev_f1_macro:.4f}")
+    print(f"  F1 (OFF):  {dev_f1_off:.4f}")
+    print(f"  F1 (NOT):  {dev_f1_not:.4f}")
     print("\n" + classification_report(dev_labels, dev_preds, 
                                        target_names=['NOT', 'OFF'], digits=4))
     
@@ -348,39 +413,43 @@ def main():
     test_f1_not = f1_score(test_labels, test_preds, pos_label=0)
     
     print(f"\nTest Set:")
-    print(f"Accuracy: {test_acc:.4f}")
-    print(f"Macro F1: {test_f1_macro:.4f}")
-    print(f"F1 (OFF): {test_f1_off:.4f}")
-    print(f"F1 (NOT): {test_f1_not:.4f}")
+    print(f"  Accuracy:  {test_acc:.4f}")
+    print(f"  Macro F1:  {test_f1_macro:.4f}")
+    print(f"  F1 (OFF):  {test_f1_off:.4f}")
+    print(f"  F1 (NOT):  {test_f1_not:.4f}")
     print("\n" + classification_report(test_labels, test_preds,
                                        target_names=['NOT', 'OFF'], digits=4))
     
     # Plot confusion matrices
-    plot_confusion_matrix(dev_labels, dev_preds, 'BiLSTM', 'dev', args.output)
-    plot_confusion_matrix(test_labels, test_preds, 'BiLSTM', 'test', args.output)
+    model_name = f"BiLSTM-{args.embedding_type.upper()}"
+    plot_confusion_matrix(dev_labels, dev_preds, model_name, 'dev', args.output)
+    plot_confusion_matrix(test_labels, test_preds, model_name, 'test', args.output)
     
-    # Save results to CSV (compatible with your visualization pipeline)
+    # Save results to CSV (compatible with baseline format)
+    print("\n" + "="*60)
+    print("SAVING RESULTS")
+    print("="*60)
+    
     results = {
-        'model': 'BiLSTM',
+        'model': model_name,
         'preprocessing': args.preprocessing,
-        'dev_accuracy': dev_acc,
-        'dev_f1_macro': dev_f1_macro,
-        'dev_f1_off': dev_f1_off,
-        'dev_f1_not': dev_f1_not,
-        'test_accuracy': test_acc,
         'test_f1_macro': test_f1_macro,
+        'test_accuracy': test_acc,
         'test_f1_off': test_f1_off,
         'test_f1_not': test_f1_not
     }
     
     results_df = pd.DataFrame([results])
-    output_file = os.path.join(args.output, f'lstm_{args.preprocessing}_results.csv')
+    output_file = os.path.join(args.output, f'lstm_{args.embedding_type}_{args.preprocessing}_results.csv')
     results_df.to_csv(output_file, index=False)
-    print(f"\nResults saved to {output_file}")
+    print(f"Results saved to: {output_file}")
     
     print("\n" + "="*60)
     print("EXPERIMENT COMPLETED")
     print("="*60)
+    print(f"Best dev F1:  {best_dev_f1:.4f}")
+    print(f"Test F1:      {test_f1_macro:.4f}")
+    print(f"Test Acc:     {test_acc:.4f}")
 
 
 if __name__ == "__main__":
