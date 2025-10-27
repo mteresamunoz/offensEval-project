@@ -54,7 +54,7 @@ def plot_confusion_matrix(y_true, y_pred, model_name, dataset_name, output_dir):
 
 
 def train_and_evaluate(X_train, y_train, X_dev, y_dev, X_test, y_test, 
-                      model_type='svm', output_dir='results/'):
+                      model_type='svm', preprocessing='raw', output_dir='results/'):
     """
     Train model with TF-IDF features and evaluate on dev and test sets.
     
@@ -63,6 +63,7 @@ def train_and_evaluate(X_train, y_train, X_dev, y_dev, X_test, y_test,
         X_dev, y_dev: Development data
         X_test, y_test: Test data
         model_type: 'svm' or 'nb'
+        preprocessing: 'raw', 'clean', or 'aggressive'
         output_dir: Directory to save visualizations
     Returns:
         results: Dictionary with metrics
@@ -136,7 +137,7 @@ def train_and_evaluate(X_train, y_train, X_dev, y_dev, X_test, y_test,
     
     return {
         'model': model_display,
-        'preprocessing': 'raw',  # Will be updated later for other preprocessing variants
+        'preprocessing': preprocessing,  # Will be updated for preprocessing variants
         'dev_accuracy': dev_acc,
         'dev_f1_macro': dev_f1,
         'dev_f1_off': dev_f1_off,
@@ -164,6 +165,9 @@ if __name__ == "__main__":
     parser.add_argument("--test", type=str, required=True, help="Path to test TSV file")
     parser.add_argument("--model", type=str, default='svm', choices=['svm', 'nb'], 
                         help="Model type: 'svm' or 'nb'")
+    parser.add_argument("--preprocessing", type=str, default='raw', 
+                        choices=['raw', 'clean', 'aggressive'],
+                        help="Preprocessing strategy used")
     parser.add_argument("--output", type=str, default='results/', 
                         help="Output directory for results")
     
@@ -183,13 +187,15 @@ if __name__ == "__main__":
     print(f"Train size: {len(X_train)}")
     print(f"Dev size: {len(X_dev)}")
     print(f"Test size: {len(X_test)}")
+    print(f"Preprocessing: {args.preprocessing}")
+
     
     # Train and evaluate
     results = train_and_evaluate(X_train, y_train, X_dev, y_dev, X_test, y_test, 
-                                args.model, args.output)
+                                args.model,args.preprocessing, args.output)
     
     # Save results
-    output_file = os.path.join(args.output, f'baseline_{args.model}_raw_results.csv')
+    output_file = os.path.join(args.output, f'baseline_{args.model}_{args.preprocessing}_results.csv')
     save_results(results, output_file)
     
     print("\n" + "="*60)
