@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+BiLSTM-GLOVE,aggressive,0.758057749604742,0.8011627906976744,0.6559356136820925,0.8601798855273917

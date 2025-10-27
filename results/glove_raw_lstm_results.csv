@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+BiLSTM-GLOVE,raw,0.7335829787234043,0.7883720930232558,0.6127659574468085,0.8544

@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+BiLSTM-FASTTEXT,clean,0.7381296756378937,0.7953488372093023,0.6157205240174672,0.8605388272583201

@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+BiLSTM-FASTTEXT,aggressive,0.7543627853837271,0.8104651162790698,0.6369710467706013,0.8717545239968528
