@@ -1,12 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#SBATCH --job-name=offenseval
+#SBATCH --cpus-per-task=8
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=64GB
+#SBATCH --time=24:00:00                   
+#SBATCH --gres=gpu:1
+#SBATCH --output=/gaueko1/users/mmartin/offenseval-project/logs/transformers.out
+#SBATCH --error=/gaueko1/users/mmartin/offenseval-project/logs/transformers.err
+#SBATCH --mail-type=REQUEUE
+#SBATCH --mail-user=mariateresa.munoz@ehu.eus
+ 
+
+source /gaueko1/users/mmartin/offenseval-project/venv/bin/activate
 
 echo "======================================"
 echo "TRANSFORMER EXPERIMENTS - OFFENSIVE LANGUAGE DETECTION"
 echo "======================================"
 echo ""
 
-# Create results directory
-mkdir -p results
 
 # Check GPU
 echo "Checking GPU..."
