@@ -1,117 +1,137 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=offenseval
+#SBATCH --job-name=offenseval_deberta_bertweet
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=64GB
 #SBATCH --time=24:00:00
 #SBATCH --gres=gpu:1
-#SBATCH --output=/gaueko1/users/mmartin/offensEval-project/logs/transformers.out
-#SBATCH --error=/gaueko1/users/mmartin/offensEval-project/logs/transformers.err
+#SBATCH --output=/gaueko1/users/mmartin/offensEval-project/logs/transformers_deberta_bertweet.out
+#SBATCH --error=/gaueko1/users/mmartin/offensEval-project/logs/transformers_deberta_bertweet.err
 #SBATCH --mail-type=REQUEUE
 #SBATCH --mail-user=mariateresa.munoz@ehu.eus
+
 
 # IMPORTANTE: Cd al directorio del proyecto
 cd /gaueko1/users/mmartin/offensEval-project
 
+
 # Activar entorno virtual
 source venv/bin/activate
 
+
 echo "======================================"
 echo "TRANSFORMER EXPERIMENTS - OFFENSIVE LANGUAGE DETECTION"
+echo "DeBERTa-v3-base + BERTweet"
 echo "======================================"
 echo ""
 echo "Working directory: $(pwd)"
 echo "Python: $(which python)"
 echo ""
 
+
 # Check GPU
 echo "Checking GPU..."
 python -c "import torch; print(f'GPU Available: {torch.cuda.is_available()}'); print(f'GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"None\"}')"
 echo ""
 
-# BERT experiments
+
 echo "======================================"
-echo "BERT-BASE EXPERIMENTS"
+echo "EXPERIMENTS WITH DEBERTA-V3-BASE"
 echo "======================================"
 
-echo "[1/6] BERT + Raw"
+
+echo ""
+echo "[1/6] DeBERTa-v3 + Raw"
 python transformers/transformer_classifier.py \
     --train data/preprocessed/raw/train.tsv \
     --dev data/preprocessed/raw/dev.tsv \
     --test data/preprocessed/raw/test.tsv \
-    --model_name bert-base-uncased \
+    --model_name microsoft/deberta-v3-base \
     --preprocessing raw \
     --batch_size 16 \
     --output results/
 
+
 echo ""
-echo "[2/6] BERT + Clean"
+echo "[2/6] DeBERTa-v3 + Clean"
 python transformers/transformer_classifier.py \
     --train data/preprocessed/clean/train.tsv \
     --dev data/preprocessed/clean/dev.tsv \
     --test data/preprocessed/clean/test.tsv \
-    --model_name bert-base-uncased \
+    --model_name microsoft/deberta-v3-base \
     --preprocessing clean \
     --batch_size 16 \
     --output results/
 
+
 echo ""
-echo "[3/6] BERT + Aggressive"
+echo "[3/6] DeBERTa-v3 + Aggressive"
 python transformers/transformer_classifier.py \
     --train data/preprocessed/aggressive/train.tsv \
     --dev data/preprocessed/aggressive/dev.tsv \
     --test data/preprocessed/aggressive/test.tsv \
-    --model_name bert-base-uncased \
+    --model_name microsoft/deberta-v3-base \
     --preprocessing aggressive \
     --batch_size 16 \
     --output results/
 
-# RoBERTa experiments
+
 echo ""
 echo "======================================"
-echo "ROBERTA-BASE EXPERIMENTS"
+echo "EXPERIMENTS WITH BERTWEET"
 echo "======================================"
 
-echo "[4/6] RoBERTa + Raw"
+
+echo ""
+echo "[4/6] BERTweet + Raw"
 python transformers/transformer_classifier.py \
     --train data/preprocessed/raw/train.tsv \
     --dev data/preprocessed/raw/dev.tsv \
     --test data/preprocessed/raw/test.tsv \
-    --model_name roberta-base \
+    --model_name vinai/bertweet-base \
     --preprocessing raw \
     --batch_size 16 \
     --output results/
 
+
 echo ""
-echo "[5/6] RoBERTa + Clean"
+echo "[5/6] BERTweet + Clean"
 python transformers/transformer_classifier.py \
     --train data/preprocessed/clean/train.tsv \
     --dev data/preprocessed/clean/dev.tsv \
     --test data/preprocessed/clean/test.tsv \
-    --model_name roberta-base \
+    --model_name vinai/bertweet-base \
     --preprocessing clean \
     --batch_size 16 \
     --output results/
 
+
 echo ""
-echo "[6/6] RoBERTa + Aggressive"
+echo "[6/6] BERTweet + Aggressive"
 python transformers/transformer_classifier.py \
     --train data/preprocessed/aggressive/train.tsv \
     --dev data/preprocessed/aggressive/dev.tsv \
     --test data/preprocessed/aggressive/test.tsv \
-    --model_name roberta-base \
+    --model_name vinai/bertweet-base \
     --preprocessing aggressive \
     --batch_size 16 \
     --output results/
+
 
 echo ""
 echo "======================================"
 echo "ALL EXPERIMENTS COMPLETED"
 echo "======================================"
 echo ""
-echo "Results saved in results/"
-ls -lh results/transformer_*.csv
+echo "Results summary:"
+echo ""
+echo "DeBERTa-v3-base results:"
+ls -lh results/transformer_deberta-v3-base*.csv
+echo ""
+echo "BERTweet results:"
+ls -lh results/transformer_bertweet*.csv
+
 
 echo ""
 echo "✅ DONE!"

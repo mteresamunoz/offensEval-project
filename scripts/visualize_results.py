@@ -195,7 +195,7 @@ def main():
                        help="Directory containing result CSV files")
     parser.add_argument("--output_dir", type=str, default="results/",
                        help="Directory to save visualization plots")
-    parser.add_argument("--pattern", type=str, default="*_results.csv",
+    parser.add_argument("--pattern", type=str, default="transformer*_results.csv",
                        help="Pattern to match result files")
     
     args = parser.parse_args()

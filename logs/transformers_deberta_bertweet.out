@@ -1,0 +1,50 @@
+======================================
+TRANSFORMER EXPERIMENTS - OFFENSIVE LANGUAGE DETECTION
+DeBERTa-v3-base + BERTweet
+======================================
+
+Working directory: /gaueko1/users/mmartin/offensEval-project
+Python: /gaueko1/users/mmartin/offensEval-project/venv/bin/python
+
+Checking GPU...
+GPU Available: True
+GPU: Tesla V100-PCIE-32GB
+
+======================================
+EXPERIMENTS WITH DEBERTA-V3-BASE
+======================================
+
+[1/6] DeBERTa-v3 + Raw
+
+============================================================
+TRANSFORMER FINE-TUNING FOR OFFENSIVE LANGUAGE DETECTION
+============================================================
+Model: microsoft/deberta-v3-base
+Display name: DEBERTA-V3-BASE
+Preprocessing: raw
+Device: cuda
+Batch size: 16
+Learning rate: 2e-05
+Max length: 128
+
+============================================================
+LOADING DATA
+============================================================
+Train: 12240 examples
+Dev: 1000 examples
+Test: 860 examples
+Class distribution (train): {'NOT': np.int64(8192), 'OFF': np.int64(4048)}
+
+============================================================
+LOADING MODEL AND TOKENIZER
+============================================================
+Tokenizer loaded: DebertaV2TokenizerFast
+Model parameters: 184,423,682
+Total training steps: 3060
+Warmup steps: 306
+
+============================================================
+TRAINING
+============================================================
+
+Epoch 1/4
