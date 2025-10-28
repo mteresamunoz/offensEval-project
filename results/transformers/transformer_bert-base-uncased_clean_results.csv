@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+BERT-BASE-UNCASED,clean,0.803430009197647,0.8546511627906976,0.7030878859857482,0.9037721324095458
