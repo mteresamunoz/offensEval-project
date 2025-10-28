@@ -39,12 +39,25 @@ python deep/lstm_classifier.py --train data/preprocessed/aggressive/train.tsv --
 
 Write-Host ""
 Write-Host "======================================"
-Write-Host "ALL EXPERIMENTS COMPLETED"
+Write-Host "ALL LSTM EXPERIMENTS COMPLETED"
 Write-Host "======================================"
 Write-Host ""
-Write-Host "Results saved in results/ directory:"
+
+Write-Host "Results CSVs:"
 Get-ChildItem results/lstm_*.csv | Format-Table Name, Length
 
 Write-Host ""
+Write-Host "Error analysis reports:"
+Get-ChildItem results/error_analysis_bilstm*.txt | Format-Table Name
+
+Write-Host ""
+Write-Host "Predictions files:"
+Get-ChildItem results/predictions_bilstm*.csv | Format-Table Name
+
+Write-Host ""
+Write-Host "Confusion matrices:"
+Get-ChildItem results/confusion_matrix_bilstm*.png | Format-Table Name
+
+Write-Host ""
 Write-Host "To visualize results, run:"
-Write-Host "python scripts/visualize_results.py"
+Write-Host "  python scripts/visualize_results.py --pattern lstm"
