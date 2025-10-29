@@ -150,6 +150,8 @@ python scripts/download_fasttext.py
 ### 3. Transformer Models
 - BERT (bert-base-uncased)
 - RoBERTa (roberta-base)
+- DeBERTa (v3-base)
+- BERTweet (base)
 
 ## Installation
 

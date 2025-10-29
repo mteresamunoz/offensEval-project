@@ -249,8 +249,8 @@ def main():
     parser.add_argument("--dev", type=str, required=True, help="Path to dev TSV")
     parser.add_argument("--test", type=str, required=True, help="Path to test TSV")
     parser.add_argument("--model_name", type=str, required=True,
-                       choices=['bert-base-uncased', 'roberta-base', 'vinai/bertweet-base'],
-                       help="Hugging Face model identifier")
+                   choices=['bert-base-uncased', 'roberta-base', 'vinai/bertweet-base', 'microsoft/deberta-v3-base'],
+                   help="Hugging Face model identifier")
     parser.add_argument("--preprocessing", type=str, default='raw',
                        choices=['raw', 'clean', 'aggressive'],
                        help="Preprocessing strategy")

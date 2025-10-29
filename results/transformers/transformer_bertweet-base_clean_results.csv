@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+BERTWEET-BASE,clean,0.8088556320737975,0.85,0.720173535791757,0.897537728355838
