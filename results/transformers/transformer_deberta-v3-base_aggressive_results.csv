@@ -1,0 +1,2 @@
+model,preprocessing,test_f1_macro,test_accuracy,test_f1_off,test_f1_not
+DEBERTA-V3-BASE,aggressive,0.815509211242485,0.8593023255813953,0.7256235827664399,0.9053948397185301

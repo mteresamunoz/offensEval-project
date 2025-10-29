@@ -90,7 +90,7 @@ def plot_model_comparison(df, output_dir, metric='test_f1_macro'):
     ax.grid(axis='y', alpha=0.3, linestyle='--')
     
     plt.tight_layout()
-    output_path = os.path.join(output_dir, f'lstm_models_{metric}_comparison.png')
+    output_path = os.path.join(output_dir, f'all_models_{metric}_comparison.png')
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Model comparison plot saved to {output_path}")
@@ -181,7 +181,7 @@ def plot_best_models_summary(df, output_dir):
     ax.set_xlim(0, max(best_configs['test_f1_macro']) * 1.1)
     
     plt.tight_layout()
-    output_path = os.path.join(output_dir, 'best_models_lstm_summary.png')
+    output_path = os.path.join(output_dir, 'best_models_all_summary.png')
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Best models summary saved to {output_path}")
@@ -195,7 +195,7 @@ def main():
                        help="Directory containing result CSV files")
     parser.add_argument("--output_dir", type=str, default="results/",
                        help="Directory to save visualization plots")
-    parser.add_argument("--pattern", type=str, default="transformer*_results.csv",
+    parser.add_argument("--pattern", type=str, default="*/*_results.csv",
                        help="Pattern to match result files")
     
     args = parser.parse_args()
