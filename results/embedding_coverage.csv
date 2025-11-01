@@ -1,0 +1,4 @@
+Preprocessing,Vocab Size,Coverage (%)
+raw,37205,29.92877301437979
+clean,37188,29.94245455523287
+aggressive,19216,80.27164862614488
