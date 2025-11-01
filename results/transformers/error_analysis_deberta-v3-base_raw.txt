@@ -1,0 +1,71 @@
+ERROR ANALYSIS: deberta-v3-base (raw)
+============================================================
+
+Total errors: 149/860 (17.3%)
+
+Confusion:
+  OFF → NOT (false negatives): 59
+  NOT → OFF (false positives): 90
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.995]
+@USER @USER Awwww she is so stinking cute! How old is she now?
+
+[OFF→NOT, conf=0.990]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.989]
+#BiggBossTelugu2 how many of you #KaushalArmy cum @USER fans... URL
+
+[OFF→NOT, conf=0.981]
+#EmmyAwards2018 - Ratings tank as expected.  Who can possibly stand to watch so many liberals in one place at one time.
+
+[OFF→NOT, conf=0.981]
+@USER @USER @USER Fascism was also against liberals as is Antifa according to your meme.
+
+[OFF→NOT, conf=0.980]
+#AmazonPets Etta can be tricky to photograph because of her colouring, but she is BEAUTIFUL and she knows it. She is in charge, has first dibs on treats, and will shout for our attention whenever she comes in the house. She kills wild rabbits but hangs out in the hutch with ours. URL
+
+[OFF→NOT, conf=0.977]
+#ChristineBlaseyFord is your #Kavanaugh accuser... #Liberals try this EVERY time... #ConfirmJudgeKavanaugh URL
+
+[OFF→NOT, conf=0.975]
+#Hillary and @ least 16 other #AngryDemocrats #WorldWarQ #WWG1WGA #MAGA #RedTsunami #AmericaFirst #WalkAway #Truth URL
+
+[OFF→NOT, conf=0.969]
+#Conservatives Govt have run up debt in spite of austerity cuts while the rich have doubled their wealth. #inequality  URL via @USER
+
+[OFF→NOT, conf=0.967]
+@USER #WalkAwayFromAllDemocrats  Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's  #MAGA.  Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.965]
+#BREAKING. #Greece: Molotov cocktails fly after protest honouring killed antifa arti... URL via @USER URL
+
+[OFF→NOT, conf=0.960]
+#auspol  I don't know why he is still in his job. Seriously. URL
+
+[OFF→NOT, conf=0.960]
+#SerenaWilliams is so full of herself...she is just as painful to watch as to listen to...
+
+[OFF→NOT, conf=0.959]
+#Liberals Are Reaching Peak Desperation To Call On #PhillipRuddock To Talk With #Turnbull To Convince Him To Help with #WentworthVotes 18 Sept 2018  @USER #Auspol #LNP #NSWpol @USER  @USER @USER #LNPMemes URL
+
+[OFF→NOT, conf=0.957]
+#America  ... tear down that #Wall! URL #tcot #partisanship #Trump #thewall #Borderwall #liberty #civilsociety #think #Conservatives #Democrats #Progressives #liberals #Independent #libertarians #GOP #DNC #CriticalThinking
+
+[OFF→NOT, conf=0.955]
+#Ted always has a feel for the most appropriate public behavior. But, often, he is unable to control himself. #GOPDysfunction URL
+
+[NOT→OFF, conf=0.948]
+@USER I guess that’s where swamp ass originated
+
+[OFF→NOT, conf=0.940]
+#David #Miliband #DavidMiliband flew away  in #NewYork to be with the #US #Liberals #Democrats - had to flee #Corbynists hatred of Jews
+
+[NOT→OFF, conf=0.940]
+Are you fucking serious?   URL
+
+[OFF→NOT, conf=0.938]
+#BlaseyFord It’s so comical that liberals always want it both ways first women need to be treated as equals but when it comes to Ford testifying they say it’s unfair to have more men asking her questions. Which is it Dems are women equal or should we receive special treatment?

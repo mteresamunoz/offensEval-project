@@ -1,0 +1,9 @@
+File: data/test.tsv
+Number of examples: 860
+Class distribution: {'OFF': 240, 'NOT': 620}
+Proportion OFF: 0.2791 (240 examples)
+Proportion NOT: 0.7209 (620 examples)
+Sample OFF: #LiberalismIsAMentalDisorder #Hypocrites #DemocratsHateAmerica #DemocratsAreDangerous EVERYTHING LIBERALS TOUCH TURNS TO ABSOLUTE SHIT. URL
+Sample NOT: #POWER #LESSONS  - There are certain testimonies that comes then rest comes and the strength of the wicked is removed. - When there is major vacuum in your life whether you are aware of it or not, its attracting the mockery.   #SEPTEMBER TO #REMEMBER #DAY2 URL
+Average tweet length: 146.16 characters
+--------------------------------------------------

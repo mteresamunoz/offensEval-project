@@ -1,0 +1,71 @@
+ERROR ANALYSIS: roberta-base (aggressive)
+============================================================
+
+Total errors: 136/860 (15.8%)
+
+Confusion:
+  OFF → NOT (false negatives): 92
+  NOT → OFF (false positives): 44
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.967]
+christineblaseyford is your kavanaugh accuser liberals try this every time confirmjudgekavanaugh url
+
+[OFF→NOT, conf=0.966]
+the kindest explanation is that he is tonedeaf its hard to feel kind when he and his ilk do this repeatedly
+
+[NOT→OFF, conf=0.956]
+are you fucking serious url
+
+[OFF→NOT, conf=0.953]
+emmyawards ratings tank as expected who can possibly stand to watch so many liberals in one place at one time
+
+[OFF→NOT, conf=0.952]
+liberals democrats this is what you stand for if not then walkaway url
+
+[OFF→NOT, conf=0.950]
+auspol i dont know why he is still in his job seriously url
+
+[OFF→NOT, conf=0.945]
+serenawilliams is so full of herselfshe is just as painful to watch as to listen to
+
+[OFF→NOT, conf=0.942]
+maga qanon greatawakening inners wwgwga nowcomesthepain walkaway goodbyedemocrats ellison accuser says shes been sidelined by her own party url
+
+[OFF→NOT, conf=0.941]
+nopasaran unity demo to oppose the farright in london antifa oct enough is enough url
+
+[OFF→NOT, conf=0.936]
+brexit deal has been reached and will be unveiled at special summit in november has sold out the uk to the eu she better have not or the are finished url
+
+[NOT→OFF, conf=0.936]
+room is actually incredible noname is the shit always has been and im seein her in like days in melbourne life is good have a nice day
+
+[OFF→NOT, conf=0.934]
+walkawayfromalldemocrats michelle was there years and we sure dont need any more bad advice from her now we have a new sheriff in town whos maga get out and vote all colors all genders aka all americans url
+
+[OFF→NOT, conf=0.934]
+sierraburgessisaloser she is me when my phone dings
+
+[NOT→OFF, conf=0.933]
+days before bbc radio s festival in a day they decide to tell us that their headline act isnt coming anymore thanks a lot now ive paid a fortune to see a tonne of acts who are shit and who are of no interest to me
+
+[NOT→OFF, conf=0.932]
+exactly its bc slick woods has that unconventional look that shes who she is yea she aint attractive to most of us but that shit dont matter all lol
+
+[OFF→NOT, conf=0.931]
+america tear down that wall url tcot partisanship trump thewall borderwall liberty civilsociety think conservatives democrats progressives liberals independent libertarians gop dnc criticalthinking
+
+[NOT→OFF, conf=0.931]
+she is just nasty
+
+[OFF→NOT, conf=0.928]
+amazonpets etta can be tricky to photograph because of her colouring but she is beautiful and she knows it she is in charge has first dibs on treats and will shout for our attention whenever she comes in the house she kills wild rabbits but hangs out in the hutch with ours url
+
+[NOT→OFF, conf=0.925]
+bull crap you know she doesnt care she is trying to get attention for her presidential run do you see any other senator giving nonsense nope
+
+[OFF→NOT, conf=0.921]
+emmys well most of those excrackheads are liberals and democrats so

@@ -1,0 +1,71 @@
+ERROR ANALYSIS: BILSTM_GLOVE (raw)
+============================================================
+
+Total errors: 182/860 (21.2%)
+
+Confusion:
+  OFF → NOT (false negatives): 96
+  NOT → OFF (false positives): 86
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[NOT→OFF, conf=0.970]
+@USER I guess that’s where swamp ass originated
+
+[NOT→OFF, conf=0.960]
+Are you fucking serious?   URL
+
+[NOT→OFF, conf=0.949]
+@USER @USER @USER She is just nasty
+
+[NOT→OFF, conf=0.934]
+#Repost thesavoyshow with get_repost ・・・ #MarkKnight Says he is not a racist after drawing a racist picture of #SerenaWilliams .. Do y’all believe him or nah?⤵️ URL
+
+[NOT→OFF, conf=0.921]
+An American Tail really is one of the most underrated animations ever ever ever. Fuck I cried in this scene
+
+[NOT→OFF, conf=0.915]
+@USER Exactly it’s bc slick woods has that unconventional look that she’s who she is yea she ain’t attractive to most of us but that shit don’t matter @ all lol
+
+[NOT→OFF, conf=0.895]
+#HIAC  Damn Matt Hardy and Randy Orton put on one hell in a cell match!! Woooo!!! I hope he is okay!!
+
+[OFF→NOT, conf=0.889]
+#SierraBurgessIsALoser  She is me when my phone dings 😂
+
+[NOT→OFF, conf=0.889]
+#Believe When you have a fat belly then you are insulin resistant and can remedy it without medicine by fasting... info is here URL URL
+
+[NOT→OFF, conf=0.885]
+3 days before BBC Radio 2’s Festival in a Day, they decide to tell us that their headline act isn’t coming anymore. Thanks a lot, now I’ve paid a fortune to see a tonne of acts who are shit and who are of no interest to me 😑👍🏻
+
+[NOT→OFF, conf=0.875]
+#Children now Mixed Up ..  Over #GenderStudies crap and #Socialism .. yeah like I did not see this one coming!  #MEGA #MBGA #MAGA #MCGA #Conservatives #Patriots #ProtectChildren URL
+
+[OFF→NOT, conf=0.866]
+@USER #WalkAwayFromAllDemocrats  Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's  #MAGA.  Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.860]
+......bitch what URL
+
+[OFF→NOT, conf=0.858]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.850]
+#AVALANCHE I'm sorry! I see you! I love you! I was an asshole! You know how we are #maga
+
+[OFF→NOT, conf=0.846]
+*Extremely* back on my bullshit. URL
+
+[OFF→NOT, conf=0.842]
+@USER #Rosie makes me nauseous!🤮 URL
+
+[NOT→OFF, conf=0.838]
+#2A. The stuff some of these people say amazes me. They do not get we already have gun control. Take a look at what happens to all the people arrested on gun charges each weekend in Chicago. Most of them are given a slap on the wrist. #NRA URL
+
+[OFF→NOT, conf=0.837]
+#Conservatives don’t care what you post..it’s @USER propaganda.. URL
+
+[OFF→NOT, conf=0.830]
+@USER Antifa has TS level influence. It's scary.

@@ -1,0 +1,47 @@
+ERROR ANALYSIS: BILSTM_FASTTEXT (raw)
+============================================================
+
+Total errors: 172/860 (20.0%)
+
+Confusion:
+  OFF → NOT (false negatives): 122
+  NOT → OFF (false positives): 50
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[NOT→OFF, conf=0.930]
+@USER I guess that’s where swamp ass originated
+
+[NOT→OFF, conf=0.921]
+Are you fucking serious?   URL
+
+[NOT→OFF, conf=0.921]
+@USER Exactly it’s bc slick woods has that unconventional look that she’s who she is yea she ain’t attractive to most of us but that shit don’t matter @ all lol
+
+[NOT→OFF, conf=0.917]
+An American Tail really is one of the most underrated animations ever ever ever. Fuck I cried in this scene
+
+[NOT→OFF, conf=0.879]
+@USER @USER Bull crap. You know she doesn't care.  She is trying to get attention for her Presidential run.  Do you see any other Senator giving nonsense?  Nope.
+
+[OFF→NOT, conf=0.822]
+@USER #WalkAwayFromAllDemocrats  Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's  #MAGA.  Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[NOT→OFF, conf=0.813]
+@USER @USER @USER She is just nasty
+
+[NOT→OFF, conf=0.809]
+#Children now Mixed Up ..  Over #GenderStudies crap and #Socialism .. yeah like I did not see this one coming!  #MEGA #MBGA #MAGA #MCGA #Conservatives #Patriots #ProtectChildren URL
+
+[OFF→NOT, conf=0.803]
+@USER #Gutierrez has always been nothing more than a #racebaiter
+
+[OFF→NOT, conf=0.802]
+#CarbonTax works and will put tons more money BACK INTO Canadian pockets.  .@USER  .@USER  .@USER .@USER  Part of why Trudeau won in 2015 was campaigning on a national carbon tax. Conservatives died then. They want another death in 2019...we will oblige. URL
+
+[OFF→NOT, conf=0.801]
+#Ted always has a feel for the most appropriate public behavior. But, often, he is unable to control himself. #GOPDysfunction URL
+
+[OFF→NOT, conf=0.801]
+*voice in my head while I transfer money to my credit card* “bullshit that I bought and have to pay for”

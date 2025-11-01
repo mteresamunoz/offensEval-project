@@ -1,0 +1,71 @@
+ERROR ANALYSIS: roberta-base (raw)
+============================================================
+
+Total errors: 136/860 (15.8%)
+
+Confusion:
+  OFF → NOT (false negatives): 76
+  NOT → OFF (false positives): 60
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.980]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.978]
+#Liberals Are Reaching Peak Desperation To Call On #PhillipRuddock To Talk With #Turnbull To Convince Him To Help with #WentworthVotes 18 Sept 2018  @USER #Auspol #LNP #NSWpol @USER  @USER @USER #LNPMemes URL
+
+[OFF→NOT, conf=0.971]
+#auspol  I don't know why he is still in his job. Seriously. URL
+
+[OFF→NOT, conf=0.969]
+#ChristineBlaseyFord is your #Kavanaugh accuser... #Liberals try this EVERY time... #ConfirmJudgeKavanaugh URL
+
+[OFF→NOT, conf=0.968]
+#EmmyAwards2018 - Ratings tank as expected.  Who can possibly stand to watch so many liberals in one place at one time.
+
+[OFF→NOT, conf=0.966]
+#BiggBossTelugu2 how many of you #KaushalArmy cum @USER fans... URL
+
+[OFF→NOT, conf=0.964]
+#SierraBurgessIsALoser  She is me when my phone dings 😂
+
+[OFF→NOT, conf=0.962]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has @USER sold out the #UK to the eu??? She better have not or the @USER are finished!! @USER URL
+
+[OFF→NOT, conf=0.958]
+#AmazonPets Etta can be tricky to photograph because of her colouring, but she is BEAUTIFUL and she knows it. She is in charge, has first dibs on treats, and will shout for our attention whenever she comes in the house. She kills wild rabbits but hangs out in the hutch with ours. URL
+
+[OFF→NOT, conf=0.955]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.951]
+@USER #WalkAwayFromAllDemocrats  Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's  #MAGA.  Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.950]
+#BlaseyFord It’s so comical that liberals always want it both ways first women need to be treated as equals but when it comes to Ford testifying they say it’s unfair to have more men asking her questions. Which is it Dems are women equal or should we receive special treatment?
+
+[NOT→OFF, conf=0.946]
+Are you fucking serious?   URL
+
+[NOT→OFF, conf=0.935]
+3 days before BBC Radio 2’s Festival in a Day, they decide to tell us that their headline act isn’t coming anymore. Thanks a lot, now I’ve paid a fortune to see a tonne of acts who are shit and who are of no interest to me 😑👍🏻
+
+[OFF→NOT, conf=0.935]
+@USER Antifa has TS level influence. It's scary.
+
+[OFF→NOT, conf=0.932]
+#Ted always has a feel for the most appropriate public behavior. But, often, he is unable to control himself. #GOPDysfunction URL
+
+[NOT→OFF, conf=0.930]
+An American Tail really is one of the most underrated animations ever ever ever. Fuck I cried in this scene
+
+[OFF→NOT, conf=0.928]
+#Hillary and @ least 16 other #AngryDemocrats #WorldWarQ #WWG1WGA #MAGA #RedTsunami #AmericaFirst #WalkAway #Truth URL
+
+[OFF→NOT, conf=0.926]
+#FamiliarWife JH-OMG, she is crazy WJ-Wait!....yes, I am interested in assistant manager Cha BH-You guys look like a good pair VO-Are you having some"? Just sit over here JH-Don't do it! WJ-Lets live our own life. Lets do it News-Collision on hwy, there is congestion JH-Woo-jin~ URL
+
+[OFF→NOT, conf=0.924]
+#Coupdetat of #Spain in #Catalona. #Spain is a  #fakedemocracy @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER #cddr #shameonSpain #WakeupEurope @USER @USER URL

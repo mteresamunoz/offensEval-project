@@ -1,0 +1,71 @@
+ERROR ANALYSIS: roberta-base (clean)
+============================================================
+
+Total errors: 139/860 (16.2%)
+
+Confusion:
+  OFF → NOT (false negatives): 65
+  NOT → OFF (false positives): 74
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.985]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has sold out the #UK to the eu??? She better have not or the are finished!! URL
+
+[OFF→NOT, conf=0.983]
+#GreatestThingsAboutThe90s liberals weren’t unhinged
+
+[OFF→NOT, conf=0.982]
+#SierraBurgessIsALoser She is me when my phone dings 😂
+
+[OFF→NOT, conf=0.981]
+#auspol I don't know why he is still in his job. Seriously. URL
+
+[OFF→NOT, conf=0.977]
+#Conservatives Govt have run up debt in spite of austerity cuts while the rich have doubled their wealth. #inequality URL via
+
+[OFF→NOT, conf=0.973]
+#AmazonPets Etta can be tricky to photograph because of her colouring, but she is BEAUTIFUL and she knows it. She is in charge, has first dibs on treats, and will shout for our attention whenever she comes in the house. She kills wild rabbits but hangs out in the hutch with ours. URL
+
+[OFF→NOT, conf=0.972]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.970]
+Fascism was also against liberals as is Antifa according to your meme.
+
+[OFF→NOT, conf=0.970]
+#BiggBossTelugu2 how many of you #KaushalArmy cum fans... URL
+
+[OFF→NOT, conf=0.965]
+- WORST POTUS. EVER!
+
+[OFF→NOT, conf=0.965]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.964]
+#ChristineBlaseyFord is your #Kavanaugh accuser... #Liberals try this EVERY time... #ConfirmJudgeKavanaugh URL
+
+[NOT→OFF, conf=0.963]
+She is just nasty
+
+[OFF→NOT, conf=0.962]
+#Gutierrez has always been nothing more than a #racebaiter
+
+[OFF→NOT, conf=0.960]
+#SerenaWilliams is so full of herself...she is just as painful to watch as to listen to...
+
+[OFF→NOT, conf=0.960]
+#Liberals Are Reaching Peak Desperation To Call On #PhillipRuddock To Talk With #Turnbull To Convince Him To Help with #WentworthVotes 18 Sept 2018 #Auspol #LNP #NSWpol #LNPMemes URL
+
+[OFF→NOT, conf=0.957]
+#WalkAwayFromAllDemocrats Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's #MAGA. Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.956]
+#David #Miliband #DavidMiliband flew away in #NewYork to be with the #US #Liberals #Democrats - had to flee #Corbynists hatred of Jews
+
+[OFF→NOT, conf=0.955]
+Antifa has TS level influence. It's scary.
+
+[OFF→NOT, conf=0.954]
+#Ted always has a feel for the most appropriate public behavior. But, often, he is unable to control himself. #GOPDysfunction URL

@@ -1,0 +1,23 @@
+ERROR ANALYSIS: SVM (raw)
+============================================================
+
+Total errors: 191/860 (22.2%)
+
+Confusion:
+  OFF → NOT (false negatives): 116
+  NOT → OFF (false positives): 75
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[NOT→OFF, conf=0.872]
+Are you fucking serious?   URL
+
+[OFF→NOT, conf=0.845]
+#BREAKING. #Greece: Molotov cocktails fly after protest honouring killed antifa arti... URL via @USER URL
+
+[OFF→NOT, conf=0.809]
+@USER #Rosie makes me nauseous!🤮 URL
+
+[OFF→NOT, conf=0.802]
+@USER Antifa has TS level influence. It's scary.

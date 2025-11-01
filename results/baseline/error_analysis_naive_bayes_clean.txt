@@ -1,0 +1,71 @@
+ERROR ANALYSIS: NAIVE_BAYES (clean)
+============================================================
+
+Total errors: 201/860 (23.4%)
+
+Confusion:
+  OFF → NOT (false negatives): 196
+  NOT → OFF (false positives): 5
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.887]
+#BREAKING. #Greece: Molotov cocktails fly after protest honouring killed antifa arti... URL via URL
+
+[OFF→NOT, conf=0.873]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has sold out the #UK to the eu??? She better have not or the are finished!! URL
+
+[OFF→NOT, conf=0.872]
+#Conservatives Govt have run up debt in spite of austerity cuts while the rich have doubled their wealth. #inequality URL via
+
+[OFF→NOT, conf=0.867]
+#Hillary and @ least 16 other #AngryDemocrats #WorldWarQ #WWG1WGA #MAGA #RedTsunami #AmericaFirst #WalkAway #Truth URL
+
+[OFF→NOT, conf=0.862]
+#Diversity only works when those joining the new group want to be a part of the team. #Islam hates every non-Muslim #Fail #Unicorns
+
+[OFF→NOT, conf=0.861]
+#AmazonPets Etta can be tricky to photograph because of her colouring, but she is BEAUTIFUL and she knows it. She is in charge, has first dibs on treats, and will shout for our attention whenever she comes in the house. She kills wild rabbits but hangs out in the hutch with ours. URL
+
+[OFF→NOT, conf=0.853]
+#Christian #America – If we go by #Trump’s example, where liberals support open borders, I guess conservatives support school shootings. Please explain how this makes America great again.
+
+[OFF→NOT, conf=0.850]
+#BlaseyFord It’s so comical that liberals always want it both ways first women need to be treated as equals but when it comes to Ford testifying they say it’s unfair to have more men asking her questions. Which is it Dems are women equal or should we receive special treatment?
+
+[OFF→NOT, conf=0.850]
+#FamiliarWife JH-OMG, she is crazy WJ-Wait!....yes, I am interested in assistant manager Cha BH-You guys look like a good pair VO-Are you having some"? Just sit over here JH-Don't do it! WJ-Lets live our own life. Lets do it News-Collision on hwy, there is congestion JH-Woo-jin~ URL
+
+[OFF→NOT, conf=0.847]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.841]
+#ConfirmKavanaugh ✅ #Kavanaugh #SCOTUS #POTUS45 #PresidentTrump #AmericaFirst #MAGA#KAG 🚫Anti #Trump liberal activist Accuser #Ford makes accusation but not willing to be subject 2 B question? Suffer the consequence of filing a false charge #LockHerUp URL
+
+[OFF→NOT, conf=0.840]
+#WalkAwayFromAllDemocrats Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's #MAGA. Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.836]
+#BoycottNike campaign must continue and grow Paying overseas staff $0.20 an hour is not okay because your staff is over there". You are exploiting poor women/men in the world. This is more than Americans can stand. URL
+
+[OFF→NOT, conf=0.835]
+Okay and? Anybody can go to Eredivise and score 15+ goals. Shit league. Bundesliga teams are competitive in euro competitions. Mexico hasn’t produced any talent like Pulisic in a long time. It’s okay, maybe you guys will one day.
+
+[OFF→NOT, conf=0.831]
+Antifa has TS level influence. It's scary.
+
+[OFF→NOT, conf=0.830]
+I'll use that one the next time im in a gun control debate or in a debate about free speech or taxes. Yes you can choose to be irresponsible or choose not to be. I argue responsible. Whats wrong with that? Don't justify murder by saying it was never alive or its my right.
+
+[OFF→NOT, conf=0.828]
+#MAGA #Qanon #GreatAwakening #inners #WWG1WGA #NowComesThePain #WalkAway #GoodbyeDemocrats Ellison Accuser Says She's Been Sidelined By Her Own Party URL
+
+[OFF→NOT, conf=0.824]
+#ThingsDarthVaderWouldNeverSay yup , white mask privilege at it's finest. Always trying to keep a black mask down #BlackLivesMatter #Qanon #Antifa #AlexJones #Infowars #StarWars #maytheforcebewithyou #thirdshiftzombies #Podcast #radio #WhiteSupremacy URL
+
+[OFF→NOT, conf=0.822]
+#HonourSacrificeBoycottMatch I hope d human rights rats r happy!hope Sidhu is happy! I hope d liberals r happy! Let’s play cricket wth thm let’s thank thm 4 wht they r doing 2our soldiers Let’s celebrate our impotence funny a piddly little nation like pak is taking us 4 a ride
+
+[OFF→NOT, conf=0.819]
+#Antifa: Take note of how to protest with civility. This is why socialism (aka communism) will never win. It is inherently evil and unsustainable. URL

@@ -1,0 +1,71 @@
+ERROR ANALYSIS: NAIVE_BAYES (raw)
+============================================================
+
+Total errors: 192/860 (22.3%)
+
+Confusion:
+  OFF → NOT (false negatives): 187
+  NOT → OFF (false positives): 5
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.910]
+#BREAKING. #Greece: Molotov cocktails fly after protest honouring killed antifa arti... URL via @USER URL
+
+[OFF→NOT, conf=0.904]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has @USER sold out the #UK to the eu??? She better have not or the @USER are finished!! @USER URL
+
+[OFF→NOT, conf=0.888]
+#Conservatives Govt have run up debt in spite of austerity cuts while the rich have doubled their wealth. #inequality  URL via @USER
+
+[OFF→NOT, conf=0.860]
+@USER Antifa has TS level influence. It's scary.
+
+[OFF→NOT, conf=0.858]
+#Coupdetat of #Spain in #Catalona. #Spain is a  #fakedemocracy @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER @USER #cddr #shameonSpain #WakeupEurope @USER @USER URL
+
+[OFF→NOT, conf=0.849]
+#Hillary and @ least 16 other #AngryDemocrats #WorldWarQ #WWG1WGA #MAGA #RedTsunami #AmericaFirst #WalkAway #Truth URL
+
+[OFF→NOT, conf=0.847]
+@USER #Diversity only works when those joining the new group want to be a part of the team.   #Islam hates every non-Muslim   #Fail  #Unicorns
+
+[OFF→NOT, conf=0.838]
+#AmazonPets Etta can be tricky to photograph because of her colouring, but she is BEAUTIFUL and she knows it. She is in charge, has first dibs on treats, and will shout for our attention whenever she comes in the house. She kills wild rabbits but hangs out in the hutch with ours. URL
+
+[OFF→NOT, conf=0.837]
+#BCOG @USER she is cool, confident, cocky, and she kicks ass!!! @USER @USER @USER URL
+
+[OFF→NOT, conf=0.835]
+#HonourSacrificeBoycottMatch I hope d human rights rats r happy!hope Sidhu is happy!  I hope d liberals r happy! Let’s play cricket wth thm let’s thank thm 4 wht they r doing 2our soldiers Let’s celebrate our impotence funny a piddly little nation like pak is taking us 4 a ride
+
+[OFF→NOT, conf=0.834]
+#BoycottNFL .@USER You are dead to me. @USER @USER URL
+
+[OFF→NOT, conf=0.832]
+#BlaseyFord It’s so comical that liberals always want it both ways first women need to be treated as equals but when it comes to Ford testifying they say it’s unfair to have more men asking her questions. Which is it Dems are women equal or should we receive special treatment?
+
+[OFF→NOT, conf=0.831]
+#Christian #America – If we go by #Trump’s example, where liberals support open borders, I guess conservatives support school shootings.   Please explain how this makes America great again.
+
+[OFF→NOT, conf=0.830]
+@USER #WalkAwayFromAllDemocrats  Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's  #MAGA.  Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.828]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.827]
+@USER @USER @USER Okay and? Anybody can go to Eredivise and score 15+ goals. Shit league. Bundesliga teams are competitive in euro competitions. Mexico hasn’t produced any talent like Pulisic in a long time. It’s okay, maybe you guys will one day.
+
+[OFF→NOT, conf=0.824]
+@USER @USER @USER Fascism was also against liberals as is Antifa according to your meme.
+
+[OFF→NOT, conf=0.821]
+#FamiliarWife JH-OMG, she is crazy WJ-Wait!....yes, I am interested in assistant manager Cha BH-You guys look like a good pair VO-Are you having some"? Just sit over here JH-Don't do it! WJ-Lets live our own life. Lets do it News-Collision on hwy, there is congestion JH-Woo-jin~ URL
+
+[OFF→NOT, conf=0.818]
+@USER @USER Awwww she is so stinking cute! How old is she now?
+
+[OFF→NOT, conf=0.817]
+@USER #Rosie makes me nauseous!🤮 URL

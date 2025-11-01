@@ -1,0 +1,9 @@
+File: data/train.tsv
+Number of examples: 12240
+Class distribution: {'OFF': 4048, 'NOT': 8192}
+Proportion OFF: 0.3307 (4048 examples)
+Proportion NOT: 0.6693 (8192 examples)
+Sample OFF: @USER Not surprising. That I*n C*nnor nigga was on the payroll
+Sample NOT: @USER Whenever you conservatives whine Kavanaugh is being appointed fast enough all I think of is Garland never getting a hearing for a year so just shhh hypocrites
+Average tweet length: 125.77 characters
+--------------------------------------------------

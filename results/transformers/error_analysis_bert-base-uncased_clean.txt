@@ -1,0 +1,71 @@
+ERROR ANALYSIS: bert-base-uncased (clean)
+============================================================
+
+Total errors: 125/860 (14.5%)
+
+Confusion:
+  OFF → NOT (false negatives): 92
+  NOT → OFF (false positives): 33
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.981]
+#Liberals Are Reaching Peak Desperation To Call On #PhillipRuddock To Talk With #Turnbull To Convince Him To Help with #WentworthVotes 18 Sept 2018 #Auspol #LNP #NSWpol #LNPMemes URL
+
+[OFF→NOT, conf=0.980]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.978]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has sold out the #UK to the eu??? She better have not or the are finished!! URL
+
+[OFF→NOT, conf=0.978]
+#SierraBurgessIsALoser She is me when my phone dings 😂
+
+[OFF→NOT, conf=0.977]
+#EmmyAwards2018 - Ratings tank as expected. Who can possibly stand to watch so many liberals in one place at one time.
+
+[OFF→NOT, conf=0.976]
+#Conservatives Govt have run up debt in spite of austerity cuts while the rich have doubled their wealth. #inequality URL via
+
+[OFF→NOT, conf=0.975]
+#BiggBossTelugu2 how many of you #KaushalArmy cum fans... URL
+
+[OFF→NOT, conf=0.973]
+#auspol I don't know why he is still in his job. Seriously. URL
+
+[OFF→NOT, conf=0.971]
+Antifa has TS level influence. It's scary.
+
+[OFF→NOT, conf=0.970]
+#GreatestThingsAboutThe90s liberals weren’t unhinged
+
+[OFF→NOT, conf=0.970]
+#Hillary and @ least 16 other #AngryDemocrats #WorldWarQ #WWG1WGA #MAGA #RedTsunami #AmericaFirst #WalkAway #Truth URL
+
+[OFF→NOT, conf=0.969]
+#Christian #America – If we go by #Trump’s example, where liberals support open borders, I guess conservatives support school shootings. Please explain how this makes America great again.
+
+[OFF→NOT, conf=0.967]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.967]
+#MAGA #Qanon #GreatAwakening #inners #WWG1WGA #NowComesThePain #WalkAway #GoodbyeDemocrats Ellison Accuser Says She's Been Sidelined By Her Own Party URL
+
+[OFF→NOT, conf=0.964]
+#ChristineBlaseyFord is your #Kavanaugh accuser... #Liberals try this EVERY time... #ConfirmJudgeKavanaugh URL
+
+[OFF→NOT, conf=0.960]
+#MoreBS = MORE #BARRYSOETOROBULLSHIT
+
+[OFF→NOT, conf=0.959]
+#America ... tear down that #Wall! URL #tcot #partisanship #Trump #thewall #Borderwall #liberty #civilsociety #think #Conservatives #Democrats #Progressives #liberals #Independent #libertarians #GOP #DNC #CriticalThinking
+
+[OFF→NOT, conf=0.959]
+#EuropaLeague Song the EU, cash your remaining chips in and p*ss off 👍 You've played all your cards and liberals in the U.S too. Brexiteers and Trump takes it all so be nice eh and life'll be better for everyone. URL
+
+[OFF→NOT, conf=0.956]
+#ArrestGeorgeSoros He Funds #DomesticTerrorists #Antifa URL
+
+[OFF→NOT, conf=0.954]
+Fascism was also against liberals as is Antifa according to your meme.

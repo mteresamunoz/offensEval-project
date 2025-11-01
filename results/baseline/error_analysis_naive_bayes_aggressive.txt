@@ -1,0 +1,71 @@
+ERROR ANALYSIS: NAIVE_BAYES (aggressive)
+============================================================
+
+Total errors: 197/860 (22.9%)
+
+Confusion:
+  OFF → NOT (false negatives): 191
+  NOT → OFF (false positives): 6
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.917]
+conservatives bn housing ontrick what a crock of shte housingcrisis url
+
+[OFF→NOT, conf=0.881]
+boycottnike campaign must continue and grow paying overseas staff an hour is not okay because your staff is over there you are exploiting poor womenmen in the world this is more than americans can stand url
+
+[OFF→NOT, conf=0.881]
+breaking greece molotov cocktails fly after protest honouring killed antifa arti url via url
+
+[OFF→NOT, conf=0.877]
+conservatives govt have run up debt in spite of austerity cuts while the rich have doubled their wealth inequality url via
+
+[OFF→NOT, conf=0.876]
+amazonpets etta can be tricky to photograph because of her colouring but she is beautiful and she knows it she is in charge has first dibs on treats and will shout for our attention whenever she comes in the house she kills wild rabbits but hangs out in the hutch with ours url
+
+[OFF→NOT, conf=0.874]
+brexit deal has been reached and will be unveiled at special summit in november has sold out the uk to the eu she better have not or the are finished url
+
+[OFF→NOT, conf=0.870]
+diversity only works when those joining the new group want to be a part of the team islam hates every nonmuslim fail unicorns
+
+[OFF→NOT, conf=0.860]
+hillary and least other angrydemocrats worldwarq wwgwga maga redtsunami americafirst walkaway truth url
+
+[OFF→NOT, conf=0.850]
+christian america if we go by trumps example where liberals support open borders i guess conservatives support school shootings please explain how this makes america great again
+
+[OFF→NOT, conf=0.849]
+blaseyford its so comical that liberals always want it both ways first women need to be treated as equals but when it comes to ford testifying they say its unfair to have more men asking her questions which is it dems are women equal or should we receive special treatment
+
+[OFF→NOT, conf=0.847]
+honoursacrificeboycottmatch i hope d human rights rats r happyhope sidhu is happy i hope d liberals r happy lets play cricket wth thm lets thank thm wht they r doing our soldiers lets celebrate our impotence funny a piddly little nation like pak is taking us a ride
+
+[OFF→NOT, conf=0.842]
+familiarwife jhomg she is crazy wjwaityes i am interested in assistant manager cha bhyou guys look like a good pair voare you having some just sit over here jhdont do it wjlets live our own life lets do it newscollision on hwy there is congestion jhwoojin url
+
+[OFF→NOT, conf=0.840]
+liberals democrats this is what you stand for if not then walkaway url
+
+[OFF→NOT, conf=0.835]
+thingsdarthvaderwouldneversay yup white mask privilege at its finest always trying to keep a black mask down blacklivesmatter qanon antifa alexjones infowars starwars maytheforcebewithyou thirdshiftzombies podcast radio whitesupremacy url
+
+[OFF→NOT, conf=0.834]
+antifa has ts level influence its scary
+
+[OFF→NOT, conf=0.832]
+ill use that one the next time im in a gun control debate or in a debate about free speech or taxes yes you can choose to be irresponsible or choose not to be i argue responsible whats wrong with that dont justify murder by saying it was never alive or its my right
+
+[OFF→NOT, conf=0.832]
+walkawayfromalldemocrats michelle was there years and we sure dont need any more bad advice from her now we have a new sheriff in town whos maga get out and vote all colors all genders aka all americans url
+
+[OFF→NOT, conf=0.825]
+barbara boxer if liberals want to use rape as a political tactic they had better have some hard evidence her word isnt evidence its called hearsay on that note i could say you cornered me in a bathroom and put your hands all over me years ago prove me wrong url
+
+[OFF→NOT, conf=0.824]
+okay and anybody can go to eredivise and score goals shit league bundesliga teams are competitive in euro competitions mexico hasnt produced any talent like pulisic in a long time its okay maybe you guys will one day
+
+[OFF→NOT, conf=0.822]
+california patriots especially those in ca obamasoros are attempting to take this house seat to get control of congress say no to tj cox he is a shill candidate fronted by the dastardly duo please get out and vote david valadao for house dist follow url

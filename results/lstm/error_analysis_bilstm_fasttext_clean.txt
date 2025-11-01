@@ -1,0 +1,68 @@
+ERROR ANALYSIS: BILSTM_FASTTEXT (clean)
+============================================================
+
+Total errors: 176/860 (20.5%)
+
+Confusion:
+  OFF → NOT (false negatives): 99
+  NOT → OFF (false positives): 77
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[NOT→OFF, conf=0.947]
+I guess that’s where swamp ass originated
+
+[OFF→NOT, conf=0.939]
+Got to love that the people making the laws tend to know nothing about the subject they're making the law for. You should hear some of the gun control laws people try to pass here in the states.
+
+[NOT→OFF, conf=0.938]
+Bull crap. You know she doesn't care. She is trying to get attention for her Presidential run. Do you see any other Senator giving nonsense? Nope.
+
+[NOT→OFF, conf=0.935]
+Are you fucking serious? URL
+
+[NOT→OFF, conf=0.933]
+#Children now Mixed Up .. Over #GenderStudies crap and #Socialism .. yeah like I did not see this one coming! #MEGA #MBGA #MAGA #MCGA #Conservatives #Patriots #ProtectChildren URL
+
+[NOT→OFF, conf=0.928]
+An American Tail really is one of the most underrated animations ever ever ever. Fuck I cried in this scene
+
+[OFF→NOT, conf=0.926]
+#WalkAwayFromAllDemocrats Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's #MAGA. Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[NOT→OFF, conf=0.925]
+3 days before BBC Radio 2’s Festival in a Day, they decide to tell us that their headline act isn’t coming anymore. Thanks a lot, now I’ve paid a fortune to see a tonne of acts who are shit and who are of no interest to me 😑👍🏻
+
+[NOT→OFF, conf=0.920]
+She is just nasty
+
+[OFF→NOT, conf=0.906]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.875]
+#auspol I don't know why he is still in his job. Seriously. URL
+
+[NOT→OFF, conf=0.861]
+Exactly it’s bc slick woods has that unconventional look that she’s who she is yea she ain’t attractive to most of us but that shit don’t matter @ all lol
+
+[OFF→NOT, conf=0.854]
+#DavidHogg, you're nobody.
+
+[NOT→OFF, conf=0.852]
+Be sure to send out the left's antifa thugs.
+
+[OFF→NOT, conf=0.851]
+#CarbonTax works and will put tons more money BACK INTO Canadian pockets. . . . . Part of why Trudeau won in 2015 was campaigning on a national carbon tax. Conservatives died then. They want another death in 2019...we will oblige. URL
+
+[OFF→NOT, conf=0.832]
+......bitch what URL
+
+[OFF→NOT, conf=0.822]
+#DemocratPartyOfDomesticTerrorists #Fascist #Antifa #FemiNazi Don't Just #WalkAway RUN! URL
+
+[OFF→NOT, conf=0.818]
+#ArrestGeorgeSoros He Funds #DomesticTerrorists #Antifa URL
+
+[OFF→NOT, conf=0.815]
+Awwww she is so stinking cute! How old is she now?

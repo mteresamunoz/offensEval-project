@@ -1,0 +1,71 @@
+ERROR ANALYSIS: deberta-v3-base (clean)
+============================================================
+
+Total errors: 124/860 (14.4%)
+
+Confusion:
+  OFF → NOT (false negatives): 83
+  NOT → OFF (false positives): 41
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.993]
+#auspol I don't know why he is still in his job. Seriously. URL
+
+[OFF→NOT, conf=0.989]
+#AmazonPets Etta can be tricky to photograph because of her colouring, but she is BEAUTIFUL and she knows it. She is in charge, has first dibs on treats, and will shout for our attention whenever she comes in the house. She kills wild rabbits but hangs out in the hutch with ours. URL
+
+[OFF→NOT, conf=0.984]
+#BiggBossTelugu2 how many of you #KaushalArmy cum fans... URL
+
+[OFF→NOT, conf=0.982]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.974]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has sold out the #UK to the eu??? She better have not or the are finished!! URL
+
+[OFF→NOT, conf=0.970]
+#BREAKING. #Greece: Molotov cocktails fly after protest honouring killed antifa arti... URL via URL
+
+[OFF→NOT, conf=0.966]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.962]
+#ArrestGeorgeSoros He Funds #DomesticTerrorists #Antifa URL
+
+[OFF→NOT, conf=0.960]
+. JEFF SESSIONS: ‘LISTEN TO THE ACLU, ANTIFA, BLACK LIVES MATTER’ IF YOU WANT MORE CHICAGO SHOOTINGS . URL
+
+[OFF→NOT, conf=0.960]
+#Ted always has a feel for the most appropriate public behavior. But, often, he is unable to control himself. #GOPDysfunction URL
+
+[OFF→NOT, conf=0.953]
+#EmmyAwards2018 - Ratings tank as expected. Who can possibly stand to watch so many liberals in one place at one time.
+
+[OFF→NOT, conf=0.945]
+#Conservatives just like old #Garbage bags blowing in the wind, here's an old garbage bag now... URL
+
+[OFF→NOT, conf=0.944]
+#Texas Ted Cruz campaign is sending people solicitations disguised as official looking county summons. Elderly residents have been confused by the notice to appear. He is so skeezy. URL
+
+[OFF→NOT, conf=0.944]
+#Liberals Are Reaching Peak Desperation To Call On #PhillipRuddock To Talk With #Turnbull To Convince Him To Help with #WentworthVotes 18 Sept 2018 #Auspol #LNP #NSWpol #LNPMemes URL
+
+[OFF→NOT, conf=0.941]
+Got to love that the people making the laws tend to know nothing about the subject they're making the law for. You should hear some of the gun control laws people try to pass here in the states.
+
+[OFF→NOT, conf=0.932]
+#BlaseyFord It’s so comical that liberals always want it both ways first women need to be treated as equals but when it comes to Ford testifying they say it’s unfair to have more men asking her questions. Which is it Dems are women equal or should we receive special treatment?
+
+[OFF→NOT, conf=0.931]
+To demonstrate how wholly incapable of carrying a thought to its logical conclusion she is?
+
+[OFF→NOT, conf=0.930]
+#Antifa, September 22: Stop the fascist NVU in #Amsterdam! URL
+
+[OFF→NOT, conf=0.927]
+#America ... tear down that #Wall! URL #tcot #partisanship #Trump #thewall #Borderwall #liberty #civilsociety #think #Conservatives #Democrats #Progressives #liberals #Independent #libertarians #GOP #DNC #CriticalThinking
+
+[NOT→OFF, conf=0.924]
+I guess that’s where swamp ass originated

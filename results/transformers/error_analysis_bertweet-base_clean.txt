@@ -1,0 +1,71 @@
+ERROR ANALYSIS: bertweet-base (clean)
+============================================================
+
+Total errors: 129/860 (15.0%)
+
+Confusion:
+  OFF → NOT (false negatives): 74
+  NOT → OFF (false positives): 55
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.964]
+#Rosie makes me nauseous!🤮 URL
+
+[OFF→NOT, conf=0.958]
+#FF he is an alien from the future 🙌🏻👽🌃 URL
+
+[OFF→NOT, conf=0.958]
+#BiggBossTelugu2 how many of you #KaushalArmy cum fans... URL
+
+[OFF→NOT, conf=0.957]
+#ChristineBlaseyFord is your #Kavanaugh accuser... #Liberals try this EVERY time... #ConfirmJudgeKavanaugh URL
+
+[OFF→NOT, conf=0.956]
+#Liberals / #Democrats THIS is what you stand for. If not, then #WalkAway URL
+
+[OFF→NOT, conf=0.955]
+#auspol I don't know why he is still in his job. Seriously. URL
+
+[OFF→NOT, conf=0.951]
+#EuropaLeague Song the EU, cash your remaining chips in and p*ss off 👍 You've played all your cards and liberals in the U.S too. Brexiteers and Trump takes it all so be nice eh and life'll be better for everyone. URL
+
+[OFF→NOT, conf=0.951]
+#Hillary and @ least 16 other #AngryDemocrats #WorldWarQ #WWG1WGA #MAGA #RedTsunami #AmericaFirst #WalkAway #Truth URL
+
+[OFF→NOT, conf=0.947]
+#BREXIT deal HAS been reached - and will be unveiled at special summit in NOVEMBER, Has sold out the #UK to the eu??? She better have not or the are finished!! URL
+
+[OFF→NOT, conf=0.945]
+#EmmyAwards2018 - Ratings tank as expected. Who can possibly stand to watch so many liberals in one place at one time.
+
+[OFF→NOT, conf=0.941]
+#Liberals Are Reaching Peak Desperation To Call On #PhillipRuddock To Talk With #Turnbull To Convince Him To Help with #WentworthVotes 18 Sept 2018 #Auspol #LNP #NSWpol #LNPMemes URL
+
+[OFF→NOT, conf=0.937]
+#Elitist #Actors #NBC #Liberals of #Dems in #Hollywood at the #Emmy Awards a 'toothless' #NBC self-promotion onslaught peppered with #MeToo cracks but it was planned, staged and okay because they are #Democrats #Socialist #Liberals of the #Left #WALKAWAY ! URL
+
+[OFF→NOT, conf=0.936]
+#NoPasaran: Unity demo to oppose the far-right in #London – #antifa #Oct13 — Enough is Enough! URL
+
+[OFF→NOT, conf=0.933]
+#Conservatives don’t care what you post..it’s propaganda.. URL
+
+[OFF→NOT, conf=0.931]
+#WalkAwayFromAllDemocrats Michelle was there 8 years and we sure don't need any more bad advice from her now. We have a new Sheriff in Town, who's #MAGA. Get out and VOTE - ALL COLORS, ALL GENDERS (AKA) ALL AMERICANS!!! URL
+
+[OFF→NOT, conf=0.917]
+Fascism was also against liberals as is Antifa according to your meme.
+
+[NOT→OFF, conf=0.907]
+I guess that’s where swamp ass originated
+
+[OFF→NOT, conf=0.905]
+#Ted always has a feel for the most appropriate public behavior. But, often, he is unable to control himself. #GOPDysfunction URL
+
+[OFF→NOT, conf=0.902]
+#America ... tear down that #Wall! URL #tcot #partisanship #Trump #thewall #Borderwall #liberty #civilsociety #think #Conservatives #Democrats #Progressives #liberals #Independent #libertarians #GOP #DNC #CriticalThinking
+
+[NOT→OFF, conf=0.902]
+She is just nasty

@@ -1,0 +1,71 @@
+ERROR ANALYSIS: BILSTM_FASTTEXT (aggressive)
+============================================================
+
+Total errors: 163/860 (19.0%)
+
+Confusion:
+  OFF → NOT (false negatives): 97
+  NOT → OFF (false positives): 66
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[NOT→OFF, conf=0.974]
+are you fucking serious url
+
+[NOT→OFF, conf=0.959]
+room is actually incredible noname is the shit always has been and im seein her in like days in melbourne life is good have a nice day
+
+[NOT→OFF, conf=0.951]
+i guess thats where swamp ass originated
+
+[OFF→NOT, conf=0.944]
+nopasaran unity demo to oppose the farright in london antifa oct enough is enough url
+
+[OFF→NOT, conf=0.941]
+goodmorningamerica tuesdaymotivation thankyou fathergod the americanpeople will begin to see the truth about our governmentcorruption mediacorruption noredaction declassifyfisa declassification completely obama hillaryclinton lies leakers liberals url
+
+[NOT→OFF, conf=0.937]
+she is just nasty
+
+[NOT→OFF, conf=0.932]
+and how very irrelevant but if they didnt find weed they would have dug up an th grade picture of him wearing a hoodie and talk about what a thug he is
+
+[OFF→NOT, conf=0.909]
+part didnt have to think too hard to come up with gabriel theyre a lizard themed glitter bombing antifa mech pilot using their superhero powers to take down corrupt logging companies theyre a buff lesbian with hearts on their uniform literally whats not to love
+
+[NOT→OFF, conf=0.902]
+bull crap you know she doesnt care she is trying to get attention for her presidential run do you see any other senator giving nonsense nope
+
+[OFF→NOT, conf=0.898]
+davidhogg youre nobody
+
+[OFF→NOT, conf=0.895]
+got to love that the people making the laws tend to know nothing about the subject theyre making the law for you should hear some of the gun control laws people try to pass here in the states
+
+[OFF→NOT, conf=0.891]
+christineblaseyford was grinding kavanaugh at a party almost yrs agoyou gotta love the age of this ridiculous metoo movement just swear kavanaugh in already and get this over with before liberals have an anxiety attack like url
+
+[OFF→NOT, conf=0.888]
+christineblaseyford is your kavanaugh accuser liberals try this every time confirmjudgekavanaugh url
+
+[NOT→OFF, conf=0.885]
+an american tail really is one of the most underrated animations ever ever ever fuck i cried in this scene
+
+[OFF→NOT, conf=0.879]
+nightmayor s dt cycle track can easily open antifa tennis courts inside crescent heights until we are able to trash nenshis communist vape shop
+
+[OFF→NOT, conf=0.879]
+justiceforsoniasfather mr usman buzdar sb please respond to sonia iqbal daughter of pti counsellor from okara whose father was killed during elections by nawaz league killers she is saying she will commit suicide in front of media where is justice
+
+[OFF→NOT, conf=0.878]
+breaking greece molotov cocktails fly after protest honouring killed antifa arti url via url
+
+[OFF→NOT, conf=0.878]
+walkawayfromalldemocrats michelle was there years and we sure dont need any more bad advice from her now we have a new sheriff in town whos maga get out and vote all colors all genders aka all americans url
+
+[OFF→NOT, conf=0.875]
+conservatives bn housing ontrick what a crock of shte housingcrisis url
+
+[OFF→NOT, conf=0.870]
+coupdetat of spain in catalona spain is a fakedemocracy cddr shameonspain wakeupeurope url

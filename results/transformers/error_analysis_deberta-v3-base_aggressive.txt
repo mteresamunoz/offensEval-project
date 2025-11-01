@@ -1,0 +1,71 @@
+ERROR ANALYSIS: deberta-v3-base (aggressive)
+============================================================
+
+Total errors: 121/860 (14.1%)
+
+Confusion:
+  OFF → NOT (false negatives): 80
+  NOT → OFF (false positives): 41
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.980]
+awwww she is so stinking cute how old is she now
+
+[OFF→NOT, conf=0.976]
+sierraburgessisaloser she is me when my phone dings
+
+[OFF→NOT, conf=0.969]
+auspol i dont know why he is still in his job seriously url
+
+[OFF→NOT, conf=0.967]
+ted always has a feel for the most appropriate public behavior but often he is unable to control himself gopdysfunction url
+
+[OFF→NOT, conf=0.966]
+liberals democrats this is what you stand for if not then walkaway url
+
+[OFF→NOT, conf=0.958]
+amazonpets etta can be tricky to photograph because of her colouring but she is beautiful and she knows it she is in charge has first dibs on treats and will shout for our attention whenever she comes in the house she kills wild rabbits but hangs out in the hutch with ours url
+
+[OFF→NOT, conf=0.957]
+texas ted cruz campaign is sending people solicitations disguised as official looking county summons elderly residents have been confused by the notice to appear he is so skeezy url
+
+[NOT→OFF, conf=0.956]
+i guess thats where swamp ass originated
+
+[OFF→NOT, conf=0.956]
+holder needed to be impeached
+
+[OFF→NOT, conf=0.955]
+brexit deal has been reached and will be unveiled at special summit in november has sold out the uk to the eu she better have not or the are finished url
+
+[OFF→NOT, conf=0.955]
+biggbosstelugu how many of you kaushalarmy cum fans url
+
+[NOT→OFF, conf=0.951]
+are you fucking serious url
+
+[OFF→NOT, conf=0.950]
+nopasaran unity demo to oppose the farright in london antifa oct enough is enough url
+
+[OFF→NOT, conf=0.949]
+emmyawards ratings tank as expected who can possibly stand to watch so many liberals in one place at one time
+
+[NOT→OFF, conf=0.948]
+bull crap you know she doesnt care she is trying to get attention for her presidential run do you see any other senator giving nonsense nope
+
+[NOT→OFF, conf=0.946]
+alex jones be smokin be dicks out here but mans really got supporters out here
+
+[NOT→OFF, conf=0.946]
+an american tail really is one of the most underrated animations ever ever ever fuck i cried in this scene
+
+[NOT→OFF, conf=0.946]
+she is just nasty
+
+[OFF→NOT, conf=0.941]
+jeff sessions listen to the aclu antifa black lives matter if you want more chicago shootings url
+
+[OFF→NOT, conf=0.940]
+liberals are reaching peak desperation to call on phillipruddock to talk with turnbull to convince him to help with wentworthvotes sept auspol lnp nswpol lnpmemes url

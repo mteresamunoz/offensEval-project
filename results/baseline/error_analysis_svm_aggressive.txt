@@ -1,0 +1,26 @@
+ERROR ANALYSIS: SVM (aggressive)
+============================================================
+
+Total errors: 187/860 (21.7%)
+
+Confusion:
+  OFF → NOT (false negatives): 118
+  NOT → OFF (false positives): 69
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.858]
+breaking greece molotov cocktails fly after protest honouring killed antifa arti url via url
+
+[OFF→NOT, conf=0.828]
+conservatives bn housing ontrick what a crock of shte housingcrisis url
+
+[OFF→NOT, conf=0.825]
+holder needed to be impeached
+
+[OFF→NOT, conf=0.809]
+rosie makes me nauseous url
+
+[OFF→NOT, conf=0.806]
+antifa has ts level influence its scary

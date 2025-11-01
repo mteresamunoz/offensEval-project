@@ -1,0 +1,71 @@
+ERROR ANALYSIS: bert-base-uncased (aggressive)
+============================================================
+
+Total errors: 146/860 (17.0%)
+
+Confusion:
+  OFF → NOT (false negatives): 82
+  NOT → OFF (false positives): 64
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.988]
+liberals democrats this is what you stand for if not then walkaway url
+
+[OFF→NOT, conf=0.985]
+brexit deal has been reached and will be unveiled at special summit in november has sold out the uk to the eu she better have not or the are finished url
+
+[OFF→NOT, conf=0.982]
+liberals are reaching peak desperation to call on phillipruddock to talk with turnbull to convince him to help with wentworthvotes sept auspol lnp nswpol lnpmemes url
+
+[OFF→NOT, conf=0.978]
+nopasaran unity demo to oppose the farright in london antifa oct enough is enough url
+
+[OFF→NOT, conf=0.976]
+christineblaseyford is your kavanaugh accuser liberals try this every time confirmjudgekavanaugh url
+
+[OFF→NOT, conf=0.974]
+sierraburgessisaloser she is me when my phone dings
+
+[OFF→NOT, conf=0.972]
+auspol i dont know why he is still in his job seriously url
+
+[OFF→NOT, conf=0.972]
+emmyawards ratings tank as expected who can possibly stand to watch so many liberals in one place at one time
+
+[OFF→NOT, conf=0.969]
+biggbosstelugu how many of you kaushalarmy cum fans url
+
+[OFF→NOT, conf=0.967]
+europaleague song the eu cash your remaining chips in and pss off youve played all your cards and liberals in the us too brexiteers and trump takes it all so be nice eh and lifell be better for everyone url
+
+[OFF→NOT, conf=0.963]
+serenawilliams is so full of herselfshe is just as painful to watch as to listen to
+
+[OFF→NOT, conf=0.961]
+the kindest explanation is that he is tonedeaf its hard to feel kind when he and his ilk do this repeatedly
+
+[OFF→NOT, conf=0.959]
+conservatives govt have run up debt in spite of austerity cuts while the rich have doubled their wealth inequality url via
+
+[OFF→NOT, conf=0.949]
+beeto just demonstrated how to lose an election in texas url maga rkba dvc
+
+[OFF→NOT, conf=0.948]
+maga qanon greatawakening inners wwgwga nowcomesthepain walkaway goodbyedemocrats ellison accuser says shes been sidelined by her own party url
+
+[NOT→OFF, conf=0.947]
+she is just nasty
+
+[OFF→NOT, conf=0.946]
+arrestgeorgesoros he funds domesticterrorists antifa url
+
+[NOT→OFF, conf=0.942]
+are you fucking serious url
+
+[OFF→NOT, conf=0.940]
+amazonpets etta can be tricky to photograph because of her colouring but she is beautiful and she knows it she is in charge has first dibs on treats and will shout for our attention whenever she comes in the house she kills wild rabbits but hangs out in the hutch with ours url
+
+[OFF→NOT, conf=0.939]
+fascism was also against liberals as is antifa according to your meme

@@ -1,0 +1,29 @@
+ERROR ANALYSIS: SVM (clean)
+============================================================
+
+Total errors: 185/860 (21.5%)
+
+Confusion:
+  OFF → NOT (false negatives): 122
+  NOT → OFF (false positives): 63
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[OFF→NOT, conf=0.864]
+#BREAKING. #Greece: Molotov cocktails fly after protest honouring killed antifa arti... URL via URL
+
+[NOT→OFF, conf=0.852]
+Are you fucking serious? URL
+
+[OFF→NOT, conf=0.820]
+#Antifa: Take note of how to protest with civility. This is why socialism (aka communism) will never win. It is inherently evil and unsustainable. URL
+
+[OFF→NOT, conf=0.815]
+#Rosie makes me nauseous!🤮 URL
+
+[OFF→NOT, conf=0.813]
+Antifa has TS level influence. It's scary.
+
+[OFF→NOT, conf=0.802]
+#EmmyAwards2018 - Ratings tank as expected. Who can possibly stand to watch so many liberals in one place at one time.

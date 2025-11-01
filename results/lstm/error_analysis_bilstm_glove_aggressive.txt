@@ -1,0 +1,71 @@
+ERROR ANALYSIS: BILSTM_GLOVE (aggressive)
+============================================================
+
+Total errors: 171/860 (19.9%)
+
+Confusion:
+  OFF → NOT (false negatives): 77
+  NOT → OFF (false positives): 94
+
+Top 20 high-confidence errors:
+------------------------------------------------------------
+
+[NOT→OFF, conf=0.972]
+she is just nasty
+
+[NOT→OFF, conf=0.971]
+i guess thats where swamp ass originated
+
+[OFF→NOT, conf=0.967]
+nopasaran unity demo to oppose the farright in london antifa oct enough is enough url
+
+[OFF→NOT, conf=0.965]
+jeff sessions listen to the aclu antifa black lives matter if you want more chicago shootings url
+
+[OFF→NOT, conf=0.964]
+diversity only works when those joining the new group want to be a part of the team islam hates every nonmuslim fail unicorns
+
+[OFF→NOT, conf=0.961]
+europaleague song the eu cash your remaining chips in and pss off youve played all your cards and liberals in the us too brexiteers and trump takes it all so be nice eh and lifell be better for everyone url
+
+[OFF→NOT, conf=0.958]
+goodmorningamerica tuesdaymotivation thankyou fathergod the americanpeople will begin to see the truth about our governmentcorruption mediacorruption noredaction declassifyfisa declassification completely obama hillaryclinton lies leakers liberals url
+
+[OFF→NOT, conf=0.955]
+bluewave dumptrump give my love or cooperatecompromise w conservativestrump supporters who constantly vilify marginalized groups who constantly attack womens rights make choices about their own bodies
+
+[OFF→NOT, conf=0.950]
+walkawayfromalldemocrats michelle was there years and we sure dont need any more bad advice from her now we have a new sheriff in town whos maga get out and vote all colors all genders aka all americans url
+
+[NOT→OFF, conf=0.946]
+are you fucking serious url
+
+[NOT→OFF, conf=0.946]
+room is actually incredible noname is the shit always has been and im seein her in like days in melbourne life is good have a nice day
+
+[OFF→NOT, conf=0.945]
+christian america if we go by trumps example where liberals support open borders i guess conservatives support school shootings please explain how this makes america great again
+
+[OFF→NOT, conf=0.940]
+sierraburgessisaloser she is me when my phone dings
+
+[OFF→NOT, conf=0.939]
+awwww she is so stinking cute how old is she now
+
+[NOT→OFF, conf=0.936]
+exactly its bc slick woods has that unconventional look that shes who she is yea she aint attractive to most of us but that shit dont matter all lol
+
+[NOT→OFF, conf=0.932]
+eric stallwell democrat from calishould worry about fixing his own state instead of trying to muster up sympathy for the liar prof hunt on fox news see liberals fox is balanced and gives both sides
+
+[OFF→NOT, conf=0.932]
+brexit deal has been reached and will be unveiled at special summit in november has sold out the uk to the eu she better have not or the are finished url
+
+[OFF→NOT, conf=0.931]
+arrestgeorgesoros he funds domesticterrorists antifa url
+
+[NOT→OFF, conf=0.931]
+florencehurricane hours of sustained lethal cyclonic forces only to a few hours to impact to northcarolina southcarolina and georgia dont be stupid get away from these areas florence sep pm nyc miami houston chicago nj ca la url
+
+[OFF→NOT, conf=0.930]
+got to love that the people making the laws tend to know nothing about the subject theyre making the law for you should hear some of the gun control laws people try to pass here in the states
