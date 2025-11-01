@@ -20,11 +20,13 @@ wheels/
 .installed.cfg
 *.egg
 
+
 # Virtual environments
 venv/
 env/
 ENV/
 .venv/
+
 
 # IDE
 .vscode/
@@ -33,32 +35,37 @@ ENV/
 *.swo
 *~
 
+
 # Data files
 data/
 
-# Emneddings
+
+# Embeddings
 embeddings/
 *.txt
 *.vec
 *.bin
 *.zip
 
+
 # Jupyter Notebooks
 .ipynb_checkpoints/
+
 
 # Environment variables
 .env
 
-# Model files
-*.pth
-*.pt
+
+# Model files - ignore PyTorch models in results/lstm ONLY
+results/lstm/*.pt
+results/lstm/*.pth
+
+# Keep other model formats out (for models/ directory)
 *.pkl
 *.h5
 best_lstm_model.pt
 
+
 # System files
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
