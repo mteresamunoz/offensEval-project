@@ -42,11 +42,13 @@ data/
 
 # Embeddings
 embeddings/
-*.txt
-*.vec
-*.bin
-*.zip
+embeddings/*.txt
+embeddings/*.vec
+embeddings/*.bin
+embeddings/*.zip
 
+# BUT allow TXT files in results/
+!results/**/*.txt
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
